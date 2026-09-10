@@ -1,0 +1,26 @@
+# Data
+Coding_Part_2*/
+DATASET_LAMA/
+DATASET_BARU/
+*.npz
+
+# Checkpoints and model weights
+checkpoints_v11/
+*.keras
+*.h5
+
+# Results
+*.csv
+*.png
+!docs/*.png
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+venv/
+.venv/
+
+# OS
+.DS_Store
+Thumbs.db
