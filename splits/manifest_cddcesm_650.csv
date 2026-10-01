@@ -1,0 +1,651 @@
+Image_name,Patient_ID,Side,View,Type,Age,ACR,BIRADS_raw,BIRADS_max,Label,Findings,has_roi,n_regions,shapes,area_pct,n_components,out_of_bounds,skipped,status,flag_normal_with_roi,flag_lesion_no_roi,flag_birads1_with_roi,flag_calc_only,flag_small_lesion_lt1pct,empty_after_resize
+P1_L_DM_MLO,1,L,MLO,DM,46,C,4,4,Malignant,Architectural distortion,True,1,polygon,29.074547977303038,1,False,,roi,False,False,False,False,False,False
+P2_R_DM_CC,2,R,CC,DM,31,C,3$2,3,Benign,Multiple equal density  masses$Benign macrocalcifications,True,9,"circle,ellipse",9.722601630148214,9,False,,roi,False,False,False,False,False,False
+P2_R_DM_MLO,2,R,MLO,DM,31,C,3$2,3,Benign,Multiple equal density masses$Benign macrocalcifications,True,10,"circle,ellipse",9.25286546031115,8,False,,roi,False,False,False,False,False,False
+P2_L_DM_CC,2,L,CC,DM,31,_,2,2,Benign,Flap,True,4,polygon,37.5653343112089,3,False,,roi,False,False,False,False,False,False
+P2_L_DM_MLO,2,L,MLO,DM,31,_,2,2,Benign,Flap,True,3,polygon,43.32056061236677,3,True,,roi,False,False,False,False,False,False
+P3_L_DM_CC,3,L,CC,DM,45,C,5,5,Malignant,High density mass with speculated margin,True,1,polygon,1.005515571164342,1,False,,roi,False,False,False,False,False,False
+P3_L_DM_MLO,3,L,MLO,DM,45,C,5,5,Malignant,High density mass with speculated margin,True,1,polygon,1.233513148278188,1,False,,roi,False,False,False,False,False,False
+P3_R_DM_CC,3,R,CC,DM,45,C,2,2,Benign,Dilated retroareolar duct,True,1,ellipse,0.3590759979547748,1,False,,roi,False,False,False,False,True,False
+P3_R_DM_MLO,3,R,MLO,DM,45,C,2,2,Benign,Dilated retroareolar duct,True,1,ellipse,0.4749360164327723,1,False,,roi,False,False,False,False,True,False
+P6_R_DM_CC,6,R,CC,DM,73,C,2,2,Benign,Benign macrocalcification,True,3,"circle,ellipse,point",0.1665116170507896,3,False,,roi,False,False,False,True,True,False
+P6_L_DM_MLO,6,L,MLO,DM,73,C,4,4,Benign,High density mass with indistinct margin,True,1,polygon,1.0973576432010608,1,False,,roi,False,False,False,False,False,False
+P7_L_DM_MLO,7,L,MLO,DM,69,B,5,5,Malignant,High density mass with speculated margin and focal skin and nipple retraction,True,1,polygon,3.4140321276494543,1,False,,roi,False,False,False,False,False,False
+P8_L_DM_MLO,8,L,MLO,DM,53,C,2,2,Benign,Benign macrocalcification,True,2,"ellipse,point",0.1364071414037124,2,False,,roi,False,False,False,True,True,False
+P9_L_DM_MLO,9,L,MLO,DM,51,C,2,2,Benign,Benign macrocalcification,True,3,"ellipse,point",0.1559376352507162,2,False,,roi,False,False,False,True,True,False
+P10_R_DM_CC,10,R,CC,DM,63,_,2,2,Benign,Edema and postoperative scar,True,8,"circle,ellipse,polygon",6.046044318549243,8,False,,roi,False,False,False,False,False,False
+P10_R_DM_MLO,10,R,MLO,DM,63,_,2,2,Benign,Edema and postoperative scar,True,12,"circle,ellipse,polygon",6.596095868577767,12,True,,roi,False,False,False,False,False,False
+P10_L_DM_CC,10,L,CC,DM,63,C,1,1,Benign,Normal,True,5,"circle,ellipse",0.9271135417496918,5,False,,roi,False,False,True,False,True,False
+P10_L_DM_MLO,10,L,MLO,DM,63,C,1,1,Benign,Normal,True,7,"circle,ellipse",0.8824820562603584,7,False,,roi,False,False,True,False,True,False
+P11_R_DM_CC,11,R,CC,DM,51,C,3,3,Benign,Equal density mass with partially obscured margin,True,1,ellipse,0.7073138800802956,1,False,,roi,False,False,False,False,True,False
+P11_R_DM_MLO,11,R,MLO,DM,51,C,3,3,Benign,Equal density mass with partially obscured margin,True,1,ellipse,0.7256247541675956,1,False,,roi,False,False,False,False,True,False
+P12_L_DM_CC,12,L,CC,DM,63,B,3,3,Malignant,Focal asymmetrical increased density$IMLN,True,2,"ellipse,polygon",17.980686822997264,2,False,,roi,False,False,False,False,False,False
+P12_L_DM_MLO,12,L,MLO,DM,63,B,3,3,Malignant,Focal asymmetrical increased density$IMLN,True,3,"ellipse,polygon",24.52357719528906,2,False,,roi,False,False,False,False,False,False
+P13_R_DM_CC,13,R,CC,DM,49,C,3,3,Benign,Equal density mass with circumscribed margin,True,1,circle,0.9847268764792728,1,False,,roi,False,False,False,False,True,False
+P14_R_DM_CC,14,R,CC,DM,56,_,4,4,Benign,Post operative scar with diffuse edematous changes,True,2,polygon,48.52788367845953,2,False,,roi,False,False,False,False,False,False
+P14_R_DM_MLO,14,R,MLO,DM,56,_,4,4,Benign,Post operative scar with diffuse edematous changes,True,2,polygon,33.27930681786742,2,False,,roi,False,False,False,False,False,False
+P15_L_DM_MLO,15,L,MLO,DM,49,C,3,3,Benign,Equal density mass with circumscribed margin,True,1,ellipse,1.0402836065537313,1,False,,roi,False,False,False,False,False,False
+P16_R_DM_MLO,16,R,MLO,DM,43,C,4,4,Malignant,High density axillary mass,True,1,circle,8.484206788406246,1,True,,roi,False,False,False,False,False,False
+P17_R_DM_MLO,17,R,MLO,DM,33,B,4,4,Benign,Architectural distortion,True,1,polygon,0.9856755662996888,1,False,,roi,False,False,False,False,True,False
+P18_R_DM_CC,18,R,CC,DM,54,C,4,4,Benign,Multiple equal density masses,True,9,"circle,ellipse,polygon",7.119863956983581,8,False,,roi,False,False,False,False,False,False
+P18_R_DM_MLO,18,R,MLO,DM,54,C,4,4,Benign,Multiple equal density masses,True,7,"circle,ellipse",4.401303267199882,6,False,,roi,False,False,False,False,False,False
+P18_L_DM_CC,18,L,CC,DM,54,C,4,4,Malignant,Architectural distortion and asymmetrical increased density,True,1,polygon,18.30205573381975,1,False,,roi,False,False,False,False,False,False
+P18_L_DM_MLO,18,L,MLO,DM,54,C,4,4,Malignant,Architectural distortion and asymmetrical increased density,True,1,polygon,15.980726458923549,1,False,,roi,False,False,False,False,False,False
+P19_L_DM_CC,19,L,CC,DM,54,C,4,4,Benign,High density mass with obscured margin,True,1,circle,0.6433352349157029,1,False,,roi,False,False,False,False,True,False
+P19_L_DM_MLO,19,L,MLO,DM,54,C,4,4,Benign,High density mass with obscured margin,True,1,ellipse,0.7105094266487898,1,False,,roi,False,False,False,False,True,False
+P20_R_DM_MLO,20,R,MLO,DM,41,C,2,2,Benign,IMLN,True,1,circle,0.7304314119539718,1,False,,roi,False,False,False,False,True,False
+P21_R_DM_CC,21,R,CC,DM,38,C,3,3,Benign,Asymmetrial increased density,True,1,polygon,14.738247756867692,1,False,,roi,False,False,False,False,False,False
+P21_R_DM_MLO,21,R,MLO,DM,38,C,3,3,Benign,Asymmetrial increased density,True,1,polygon,8.477607094234568,1,False,,roi,False,False,False,False,False,False
+P22_L_DM_CC,22,L,CC,DM,39,C,3,3,Benign,Asymmetrial increased density and edema,True,2,polygon,32.24406717051206,2,False,,roi,False,False,False,False,False,False
+P23_R_DM_CC,23,R,CC,DM,47,_,2,2,Benign,Edema and postoperative scar,True,2,polygon,7.422403744665229,2,False,,roi,False,False,False,False,False,False
+P24_R_DM_CC,24,R,CC,DM,30,B,5,5,Malignant,"High density mass with microlobulated margin and surrounding nodules, one with overlying clusters of pleomorphic microcalcifications",True,4,polygon,2.1687200647285456,4,False,,roi,False,False,False,False,False,False
+P24_R_DM_MLO,24,R,MLO,DM,30,B,5,5,Malignant,"High density mass with microlobulated margin and surrounding nodules, one with overlying clusters of pleomorphic microcalcifications",True,3,polygon,1.7882790776654378,3,False,,roi,False,False,False,False,False,False
+P25_L_DM_MLO,25,L,MLO,DM,59,B,3$2,3,Benign,Two equal density masses with circumscribed margin$Benign macrocalcifications,True,3,"circle,ellipse",6.815926596490112,3,False,,roi,False,False,False,False,False,False
+P26_L_DM_CC,26,L,CC,DM,60,C,4,4,Malignant,Diffuse edematous changes,True,2,polygon,49.58880150210446,2,False,,roi,False,False,False,False,False,False
+P26_L_DM_MLO,26,L,MLO,DM,60,C,4,4,Malignant,Diffuse edematous changes,True,2,polygon,46.60517267694612,2,False,,roi,False,False,False,False,False,False
+P27_L_DM_CC,27,L,CC,DM,61,C,4,4,Malignant,Asymmetrical increased density and edema pattern,True,2,polygon,9.996607325621506,2,True,,roi,False,False,False,False,False,False
+P27_L_DM_MLO,27,L,MLO,DM,61,C,4,4,Malignant,Asymmetrical increased density and edema pattern,True,2,polygon,10.813496059397698,2,False,,roi,False,False,False,False,False,False
+P28_R_DM_CC,28,R,CC,DM,46,C,3,3,Benign,Asymmetrial increased density,True,1,polygon,2.5687408074881937,1,False,,roi,False,False,False,False,False,False
+P28_R_DM_MLO,28,R,MLO,DM,46,C,3,3,Benign,Asymmetrial increased density,True,1,polygon,2.1022920230706177,1,False,,roi,False,False,False,False,False,False
+P28_L_DM_MLO,28,L,MLO,DM,46,C,4,4,Malignant,Diffuse edematous changes,True,2,polygon,27.09577638142126,2,False,,roi,False,False,False,False,False,False
+P29_L_DM_CC,29,L,CC,DM,51,D,1,1,Malignant,Normal,True,1,polygon,13.419145722673816,1,False,,roi,False,False,True,False,False,False
+P30_R_DM_CC,30,R,CC,DM,61,C,2,2,Benign,Benign macrocalcification,True,25,"circle,ellipse,polygon",11.978214273982504,3,False,,roi,False,False,False,True,False,False
+P30_R_DM_MLO,30,R,MLO,DM,61,C,2,2,Benign,Benign macrocalcification,True,15,"circle,ellipse,polygon,polyline",8.87808237586508,3,False,,roi,False,False,False,True,False,False
+P31_R_DM_CC,31,R,CC,DM,39,C,4,4,Benign,High density mass with obscured margin,True,1,polygon,48.71575847376414,1,False,,roi,False,False,False,False,False,False
+P31_R_DM_MLO,31,R,MLO,DM,39,C,4,4,Benign,High density mass with obscured margin,True,1,polygon,44.53731793258088,1,False,,roi,False,False,False,False,False,False
+P31_L_DM_CC,31,L,CC,DM,39,C,1,1,Benign,Normal,True,1,polygon,37.359069461912505,1,False,,roi,False,False,True,False,False,False
+P31_L_DM_MLO,31,L,MLO,DM,39,C,1,1,Benign,Normal,True,1,polygon,35.7062508625144,1,False,,roi,False,False,True,False,False,False
+P32_R_DM_CC,32,R,CC,DM,53,C,4,4,Malignant,Nodular increased density with overlying microcalcifications,True,1,polygon,13.366210662195646,1,False,,roi,False,False,False,False,False,False
+P32_R_DM_MLO,32,R,MLO,DM,53,C,4,4,Malignant,Nodular increased density with overlying microcalcifications,True,2,polygon,12.19546579337936,1,False,,roi,False,False,False,False,False,False
+P34_R_DM_MLO,34,R,MLO,DM,46,B,3,3,Malignant,Asymmetrical increased density,True,1,polygon,9.866211574178068,1,False,,roi,False,False,False,False,False,False
+P35_R_DM_MLO,35,R,MLO,DM,50,_,2,2,Benign,Edema and postoperative scar,True,2,polygon,11.138804792733218,2,False,,roi,False,False,False,False,False,False
+P35_L_DM_CC,35,L,CC,DM,50,B,3,3,Benign,Equal density mass with partially obscured lobulated margin,True,1,polygon,0.4666838388501098,1,False,,roi,False,False,False,False,True,False
+P35_L_DM_MLO,35,L,MLO,DM,50,B,3,3,Benign,Equal density mass with partially obscured lobulated margin,True,1,ellipse,0.5068626386055685,1,False,,roi,False,False,False,False,True,False
+P37_L_DM_CC,37,L,CC,DM,32,C,3,3,Malignant,Focal asymmetrical increased density,True,4,"polygon,polyline",9.842103602750962,1,False,,roi,False,False,False,False,False,False
+P37_L_DM_MLO,37,L,MLO,DM,32,C,3,3,Malignant,Focal asymmetrical increased density,True,3,polygon,8.91983413518366,1,False,,roi,False,False,False,False,False,False
+P38_R_DM_CC,38,R,CC,DM,38,C,1,1,Malignant,Normal,True,1,polygon,1.0182410898644405,1,False,,roi,False,False,True,False,False,False
+P38_R_DM_MLO,38,R,MLO,DM,38,C,1,1,Malignant,Normal,True,1,polygon,1.39125284162076,1,False,,roi,False,False,True,False,False,False
+P40_R_DM_CC,40,R,CC,DM,28,B,4,4,Benign,High density mass with indistinct margin,True,1,circle,1.0347136484377923,1,False,,roi,False,False,False,False,False,False
+P40_R_DM_MLO,40,R,MLO,DM,28,B,4,4,Benign,High density mass with indistinct margin,True,1,ellipse,0.9986915506328504,1,False,,roi,False,False,False,False,True,False
+P40_L_DM_CC,40,L,CC,DM,28,B,2,2,Benign,IMLN,True,1,ellipse,0.1667379328175652,1,False,,roi,False,False,False,False,True,False
+P40_L_DM_MLO,40,L,MLO,DM,28,B,2,2,Benign,IMLN,True,1,ellipse,0.202350568337951,1,False,,roi,False,False,False,False,True,False
+P44_R_DM_CC,44,R,CC,DM,40,C,2,2,Benign,Mixed density mass with circumscribed margin,True,1,polygon,3.4252158189784665,1,False,,roi,False,False,False,False,False,False
+P44_L_DM_CC,44,L,CC,DM,40,_,2,2,Benign,Edema and postoperative scar,True,3,polygon,24.47993925982367,3,False,,roi,False,False,False,False,False,False
+P44_L_DM_MLO,44,L,MLO,DM,40,_,2,2,Benign,Edema and postoperative scar,True,2,polygon,31.010500778896137,2,False,,roi,False,False,False,False,False,False
+P45_R_DM_CC,45,R,CC,DM,33,B,3,3,Benign,Lobulated equal density mass with circumscribed margin,True,1,ellipse,0.8093563993559969,1,False,,roi,False,False,False,False,True,False
+P45_R_DM_MLO,45,R,MLO,DM,33,B,4,4,Benign,Ill defined equal density mass,True,1,ellipse,0.7414142070115055,1,False,,roi,False,False,False,False,True,False
+P45_L_DM_CC,45,L,CC,DM,33,B,3,3,Benign,Asymmetrical increased density$Equal density mass with circumscribed margin,True,2,"ellipse,polygon",32.15992664051263,1,False,,roi,False,False,False,False,False,False
+P45_L_DM_MLO,45,L,MLO,DM,33,B,3,3,Benign,Asymmetrical increased density$Equal density mass with circumscribed margin,True,2,"ellipse,polygon",35.27039418268667,1,True,,roi,False,False,False,False,False,False
+P46_L_DM_MLO,46,L,MLO,DM,21,D,4,4,Benign,Asymmetrcial increased density and overlying microcalcifications,True,1,polygon,8.599180588906373,1,False,,roi,False,False,False,False,False,False
+P47_R_DM_CC,47,R,CC,DM,42,C,4,4,Malignant,Architectural distortion and high density mass with speculated margin and overlying clusters of pleomorphic microcalcifications$Retroareolar equal density mass with circumscribed margin,True,5,polygon,19.10224039262169,3,False,,roi,False,False,False,False,False,False
+P51_R_DM_CC,51,R,CC,DM,64,C,5,5,Malignant,Asymmetrical increased density and overlying microcalcifications,True,1,polygon,22.0475989269987,1,False,,roi,False,False,False,False,False,False
+P51_R_DM_MLO,51,R,MLO,DM,64,C,5,5,Malignant,Asymmetrical increased density and overlying microcalcifications,True,1,polygon,16.37972352441881,1,False,,roi,False,False,False,False,False,False
+P51_L_DM_CC,51,L,CC,DM,64,C,2,2,Benign,Benign macrocalcification,True,2,"circle,ellipse",0.0873264439155912,2,False,,roi,False,False,False,True,True,False
+P51_L_DM_MLO,51,L,MLO,DM,64,C,2,2,Benign,Benign macrocalcification,True,2,"circle,ellipse",0.081985184355874,2,False,,roi,False,False,False,True,True,False
+P52_L_DM_CC,52,L,CC,DM,50,C,2,2,Benign,Benign macrocalcification,True,8,"circle,ellipse",0.3091676585719018,8,False,,roi,False,False,False,True,True,False
+P52_L_DM_MLO,52,L,MLO,DM,50,C,2,2,Benign,Benign macrocalcification,True,5,"circle,ellipse",0.2100689729513631,5,False,,roi,False,False,False,True,True,False
+P53_R_DM_CC,53,R,CC,DM,46,C,4,4,Malignant,Asymmetrical increased density and edema pattern,True,2,polygon,43.123399997401016,2,False,,roi,False,False,False,False,False,False
+P54_R_DM_CC,54,R,CC,DM,61,_,2,2,Benign,Edema and postoperative scar,True,2,polygon,10.405918949413904,2,False,,roi,False,False,False,False,False,False
+P54_R_DM_MLO,54,R,MLO,DM,61,_,2,2,Benign,Edema and postoperative scar,True,3,"polygon,polyline",10.772877853568644,2,False,,roi,False,False,False,False,False,False
+P55_R_DM_CC,55,R,CC,DM,55,_,5,5,Malignant,Edema and postoperative scar with two focal asymmetrical increased densities and nipple retraction,True,5,polygon,13.244906652565405,5,False,,roi,False,False,False,False,False,False
+P55_R_DM_MLO,55,R,MLO,DM,55,_,5,5,Malignant,Edema and postoperative scar with two focal asymmetrical increased densities and nipple retraction,True,2,polygon,10.681802386192516,1,False,,roi,False,False,False,False,False,False
+P56_L_DM_MLO,56,L,MLO,DM,38,C,4,4,Malignant,Architectural distortion,True,1,polygon,7.224786866774208,1,False,,roi,False,False,False,False,False,False
+P59_R_DM_CC,59,R,CC,DM,84,B,5,5,Malignant,High density ulcerating mass with overlying mircocalcifications and edema pattern,True,2,polygon,43.56283676673808,1,False,,roi,False,False,False,False,False,False
+P59_R_DM_MLO,59,R,MLO,DM,84,B,5,5,Malignant,High density ulcerating mass with overlying mircocalcifications and edema pattern,True,2,polygon,33.73488874228647,1,False,,roi,False,False,False,False,False,False
+P59_L_DM_CC,59,L,CC,DM,84,B,2,2,Benign,Vascular calcifications,True,3,polygon,1.3835973094225125,3,False,,roi,False,False,False,True,False,False
+P59_L_DM_MLO,59,L,MLO,DM,84,B,2,2,Benign,Vascular calcifications,True,2,polygon,2.3639887083237965,2,False,,roi,False,False,False,True,False,False
+P60_L_DM_MLO,60,L,MLO,DM,74,B,5,5,Malignant,High density mass with speculated margin,True,1,polygon,5.005678493994562,1,False,,roi,False,False,False,False,False,False
+P61_L_DM_CC,61,L,CC,DM,30,_,4,4,Benign,Postoperative scar and asymmetrical increased density,True,1,ellipse,0.3253769461224891,1,False,,roi,False,False,False,False,True,False
+P61_L_DM_MLO,61,L,MLO,DM,30,_,4,4,Benign,Postoperative scar and asymmetrical increased density,True,1,polygon,7.7482712178821345,1,False,,roi,False,False,False,False,False,False
+P62_R_DM_CC,62,R,CC,DM,52,C,2,2,Benign,IMLN,True,2,"ellipse,polygon",0.4396907735497379,2,False,,roi,False,False,False,False,True,False
+P62_R_DM_MLO,62,R,MLO,DM,52,C,2,2,Benign,IMLN,True,1,ellipse,0.3743456036934746,1,False,,roi,False,False,False,False,True,False
+P62_L_DM_CC,62,L,CC,DM,52,C,2,2,Benign,IMLN,True,1,circle,0.2734460103077024,1,False,,roi,False,False,False,False,True,False
+P62_L_DM_MLO,62,L,MLO,DM,52,C,2,2,Benign,IMLN,True,2,ellipse,0.328428304742954,2,False,,roi,False,False,False,False,True,False
+P64_R_DM_CC,64,R,CC,DM,35,C,4,4,Malignant,Equal density mass with indistinct margin,True,1,polygon,0.7674319976032341,1,False,,roi,False,False,False,False,True,False
+P64_L_DM_CC,64,L,CC,DM,35,C,2,2,Benign,IMLN,True,1,ellipse,0.332970955941765,1,False,,roi,False,False,False,False,True,False
+P64_L_DM_MLO,64,L,MLO,DM,35,C,2,2,Benign,IMLN,True,1,ellipse,0.2163772189191121,1,False,,roi,False,False,False,False,True,False
+P65_L_DM_CC,65,L,CC,DM,34,D,4,4,Benign,Equal density mass with microlobulated margin,True,1,ellipse,1.042905888520981,1,False,,roi,False,False,False,False,False,False
+P65_L_DM_MLO,65,L,MLO,DM,34,D,4,4,Benign,Equal density mass with microlobulated margin,True,1,polygon,0.9066994238518448,1,False,,roi,False,False,False,False,True,False
+P66_R_DM_CC,66,R,CC,DM,57,D,4,4,Malignant,High density irregular mass,True,1,polygon,0.5829640014374925,1,False,,roi,False,False,False,False,True,False
+P66_R_DM_MLO,66,R,MLO,DM,57,D,4,4,Malignant,High density irregular mass,True,1,polygon,0.6184816355932351,1,False,,roi,False,False,False,False,True,False
+P66_L_DM_CC,66,L,CC,DM,57,D,5,5,Malignant,High density irregular mass with speculated margin,True,1,polygon,1.5083404987102322,1,False,,roi,False,False,False,False,False,False
+P66_L_DM_MLO,66,L,MLO,DM,57,D,5,5,Malignant,High density irregular mass with speculated margin,True,1,polygon,2.008169777966604,1,False,,roi,False,False,False,False,False,False
+P67_R_DM_MLO,67,R,MLO,DM,64,B,3$2,3,Benign,Equal density mass with circumscribed margin$Benign macrocalcifications,True,2,"circle,polygon",0.4427254161767436,2,False,,roi,False,False,False,False,True,False
+P67_L_DM_CC,67,L,CC,DM,64,B,2,2,Benign,IMLN,True,2,ellipse,0.2800545647135157,2,False,,roi,False,False,False,False,True,False
+P68_L_DM_CC,68,L,CC,DM,34,C,3,3,Benign,Multiple equal density masses with circumscribed margin,True,7,"circle,ellipse",7.001331965905077,6,False,,roi,False,False,False,False,False,False
+P68_L_DM_MLO,68,L,MLO,DM,34,C,3,3,Benign,Multiple equal density masses with circumscribed margin,True,3,ellipse,5.095658063388488,3,False,,roi,False,False,False,False,False,False
+P69_L_DM_CC,69,L,CC,DM,60,C,2,2,Benign,Benign macrocalcification,True,1,circle,0.0376931636125231,1,False,,roi,False,False,False,True,True,False
+P70_L_DM_CC,70,L,CC,DM,41,D,4,4,Malignant,Clusters of pleomorphic microcalcification,True,5,polygon,10.83473335878834,5,False,,roi,False,False,False,False,False,False
+P71_L_DM_MLO,71,L,MLO,DM,42,C,1,1,Benign,Normal,True,2,"ellipse,polygon",37.70342455432147,1,False,,roi,False,False,True,False,False,False
+P72_R_DM_CC,72,R,CC,DM,67,B,5,5,Malignant,Two high density masses with speculated margin,True,2,polygon,4.5807391443167305,2,False,,roi,False,False,False,False,False,False
+P73_R_DM_CC,73,R,CC,DM,56,B,3$2,3,Benign,Asymmetrical increased density with prominent duct system$Benign macrocalcification,True,4,"ellipse,polygon",5.535181872391175,4,False,,roi,False,False,False,False,False,False
+P73_R_DM_MLO,73,R,MLO,DM,56,B,3$2,3,Benign,Asymmetrical increased density with prominent duct system$Benign macrocalcification,True,4,"circle,ellipse,polygon",9.615540045343398,4,False,,roi,False,False,False,False,False,False
+P73_L_DM_CC,73,L,CC,DM,56,B,2,2,Benign,Prominent duct system,True,2,polygon,1.6697658874340169,1,False,,roi,False,False,False,False,False,False
+P73_L_DM_MLO,73,L,MLO,DM,56,B,2,2,Benign,Prominent duct system,True,1,polygon,0.9986850002888495,1,False,,roi,False,False,False,False,True,False
+P74_L_DM_CC,74,L,CC,DM,63,B,5,5,Malignant,Asymmetrical increased density with overlying microcalcifications and edema pattern,True,4,polygon,24.126347327137548,1,False,,roi,False,False,False,False,False,False
+P74_L_DM_MLO,74,L,MLO,DM,63,B,5,5,Malignant,Asymmetrical increased density with overlying microcalcifications and edema pattern,True,4,"polygon,polyline",20.124072154260837,2,False,,roi,False,False,False,False,False,False
+P76_R_DM_CC,76,R,CC,DM,50,D,2,2,Benign,Equal density mass with circumscribed margin and overlying macrocalcification$Benign macrocalcifications,True,3,"circle,ellipse",2.017050722728116,3,False,,roi,False,False,False,False,False,False
+P76_R_DM_MLO,76,R,MLO,DM,50,D,3,3,Benign,Three equal density masses with circumsribed margin two of them show overlying macrocalification,True,5,"circle,ellipse",3.3012561800020177,5,False,,roi,False,False,False,False,False,False
+P77_R_DM_CC,77,R,CC,DM,41,C,3,3,Benign,Equal density lobulated mass with partially obscured margin,True,1,ellipse,2.100218927986942,1,False,,roi,False,False,False,False,False,False
+P80_L_DM_CC,80,L,CC,DM,50,_,2,2,Benign,Edema and postoperative scar,True,2,polygon,8.243217488255082,2,False,,roi,False,False,False,False,False,False
+P80_L_DM_MLO,80,L,MLO,DM,50,_,2,2,Benign,Edema and postoperative scar,True,2,polygon,8.15425947413525,1,False,,roi,False,False,False,False,False,False
+P81_L_DM_CC,81,L,CC,DM,47,B,2,2,Benign,IMLN,True,1,ellipse,0.2660590456221135,1,False,,roi,False,False,False,False,True,False
+P81_L_DM_MLO,81,L,MLO,DM,47,B,2,2,Benign,IMLN,True,1,ellipse,0.1938418947383615,1,False,,roi,False,False,False,False,True,False
+P82_L_DM_CC,82,L,CC,DM,49,C,4,4,Malignant,High density mass with indistinct margin and two adjacent masses with indistinct margin,True,4,polygon,4.743288361951485,4,False,,roi,False,False,False,False,False,False
+P82_L_DM_MLO,82,L,MLO,DM,49,C,4,4,Malignant,High density mass with indistinct margin,True,5,polygon,8.198212781146626,4,True,,roi,False,False,False,False,False,False
+P83_L_DM_CC,83,L,CC,DM,61,B,4,4,Malignant,Architectural distortion with overlying macrocalcification  and edema pattern,True,2,polygon,15.610357564453048,2,False,,roi,False,False,False,False,False,False
+P83_L_DM_MLO,83,L,MLO,DM,61,B,4,4,Malignant,Architectural distortion with overlying macrocalcification  and edema pattern,True,3,polygon,18.037955471731717,2,False,,roi,False,False,False,False,False,False
+P84_L_DM_CC,84,L,CC,DM,61,B,4,4,Malignant,Architectural distortion with overlying macrocalcification  and edema pattern,True,2,polygon,23.97726213773181,1,False,,roi,False,False,False,False,False,False
+P84_L_DM_MLO,84,L,MLO,DM,61,B,4,4,Malignant,Architectural distortion with overlying macrocalcification  and edema pattern,True,2,polygon,17.90090755961312,2,False,,roi,False,False,False,False,False,False
+P85_R_DM_MLO,85,R,MLO,DM,33,C,6,6,Malignant,Architectural distortion,True,1,polygon,4.593249575214399,1,False,,roi,False,False,False,False,False,False
+P86_R_DM_MLO,86,R,MLO,DM,33,C,3,3,Benign,Focal asymmetrical increased density,True,1,polygon,9.567952579048365,1,False,,roi,False,False,False,False,False,False
+P87_L_DM_CC,87,L,CC,DM,40,C,5,5,Malignant,Asymmetrical increased density with overlying segmental microcalcification,True,1,polygon,35.92610973326802,1,False,,roi,False,False,False,False,False,False
+P87_L_DM_MLO,87,L,MLO,DM,40,C,5,5,Malignant,Asymmetrical increased density with overlying segmental microcalcification,True,3,polygon,30.52304782917028,1,False,,roi,False,False,False,False,False,False
+P88_R_DM_CC,88,R,CC,DM,29,C,3,3,Benign,Focal asymmetrical increased density,True,3,"ellipse,polygon",6.985830143976672,1,False,,roi,False,False,False,False,False,False
+P88_R_DM_MLO,88,R,MLO,DM,29,C,3,3,Benign,Focal asymmetrical increased density,True,1,polygon,11.4987974987975,1,False,,roi,False,False,False,False,False,False
+P89_R_DM_CC,89,R,CC,DM,64,B,5,5,Malignant,High density irregular mass with indistinct margin and overlying microcalcification and edema pattern,True,3,polygon,22.489451942830637,2,False,,roi,False,False,False,False,False,False
+P89_R_DM_MLO,89,R,MLO,DM,64,B,5,5,Malignant,High density irregular mass with indistinct margin and overlying microcalcification and edema pattern,True,3,polygon,22.12687071714277,2,False,,roi,False,False,False,False,False,False
+P90_R_DM_CC,90,R,CC,DM,41,B,3,3,Malignant,Retroareolar asymmetrical increased density,True,1,polygon,9.209502193011383,1,False,,roi,False,False,False,False,False,False
+P90_R_DM_MLO,90,R,MLO,DM,41,B,3,3,Malignant,Retroareolar asymmetrical increased density,True,1,polygon,9.557788404706894,1,False,,roi,False,False,False,False,False,False
+P91_L_DM_MLO,91,L,MLO,DM,44,_,3,3,Benign,Edema and postoperative scar with focal asymmetrical increased density,True,1,polygon,2.6140381341358347,1,False,,roi,False,False,False,False,False,False
+P93_R_DM_CC,93,R,CC,DM,51,B,2,2,Benign,Benign macrocalcification,True,3,circle,0.1817148928007554,3,False,,roi,False,False,False,True,True,False
+P93_R_DM_MLO,93,R,MLO,DM,51,B,2,2,Benign,Benign macrocalcification,True,2,circle,0.1180867899029477,2,False,,roi,False,False,False,True,True,False
+P93_L_DM_CC,93,L,CC,DM,51,B,5$2,5,Malignant,High density mass with speculated margin and overlying microcalcification$Benign macrocalcificaion,True,3,"circle,polygon",10.51119497922144,2,False,,roi,False,False,False,False,False,False
+P93_L_DM_MLO,93,L,MLO,DM,51,B,5$2,5,Malignant,High density mass with speculated margin and overlying microcalcification$Benign macrocalcificaion,True,3,"circle,polygon",9.221005334672787,2,False,,roi,False,False,False,False,False,False
+P94_R_DM_CC,94,R,CC,DM,45,B,3,3,Malignant,Asymmetrical increased density,True,1,polygon,1.873579439865916,1,False,,roi,False,False,False,False,False,False
+P94_R_DM_MLO,94,R,MLO,DM,45,B,3,3,Malignant,Asymmetrical increased density,True,1,polygon,0.6569897222432902,1,False,,roi,False,False,False,False,True,False
+P94_L_DM_MLO,94,L,MLO,DM,45,B,2,2,Benign,IMLN,True,1,circle,0.1357414486800951,1,False,,roi,False,False,False,False,True,False
+P95_L_DM_CC,95,L,CC,DM,43,C,5,5,Malignant,High density mass with speculated margin and nipple retraction,True,3,"polygon,polyline",5.948342505095834,1,False,,roi,False,False,False,False,False,False
+P96_R_DM_CC,96,R,CC,DM,63,B,4,4,Malignant,Global asymmetrial increased density and edema pattern,True,2,polygon,5.572973790703832,2,False,,roi,False,False,False,False,False,False
+P96_R_DM_MLO,96,R,MLO,DM,63,B,4,4,Malignant,High density mass with indistinct margin and edema pattern,True,3,"circle,polygon",5.003965844380496,3,False,,roi,False,False,False,False,False,False
+P96_L_DM_CC,96,L,CC,DM,63,B,2,2,Benign,Benign macrocalcification,True,5,"ellipse,polygon",4.847332021753127,5,False,,roi,False,False,False,True,False,False
+P96_L_DM_MLO,96,L,MLO,DM,63,B,2,2,Benign,Benign macrocalcification,True,2,ellipse,0.050723698077469,2,False,,roi,False,False,False,True,True,False
+P97_L_DM_CC,97,L,CC,DM,43,C,4,4,Malignant,High density mass with indistinct margin,True,3,polygon,16.558342300919584,1,False,,roi,False,False,False,False,False,False
+P97_L_DM_MLO,97,L,MLO,DM,43,C,4,4,Malignant,High density mass with indistinct margin,True,3,polygon,23.238200512139716,1,False,,roi,False,False,False,False,False,False
+P98_L_DM_CC,98,L,CC,DM,48,B,4,4,Benign,Global asymmetrial increased density and edema pattern,True,2,polygon,21.914365093171515,2,False,,roi,False,False,False,False,False,False
+P98_L_DM_MLO,98,L,MLO,DM,48,B,4,4,Benign,Global asymmetrial increased density and edema pattern,True,2,polygon,14.20655704431976,2,False,,roi,False,False,False,False,False,False
+P99_R_DM_CC,99,R,CC,DM,61,B,4,4,Malignant,High density mass with microlobulated margin,True,1,polygon,5.031029566077178,1,False,,roi,False,False,False,False,False,False
+P99_R_DM_MLO,99,R,MLO,DM,61,B,4,4,Malignant,High density mass with microlobulated margin,True,1,polygon,5.325596268048741,1,False,,roi,False,False,False,False,False,False
+P100_L_DM_CC,100,L,CC,DM,61,_,2,2,Benign,Edema and postoperative scar,True,2,polygon,7.635290731145654,2,False,,roi,False,False,False,False,False,False
+P100_L_DM_MLO,100,L,MLO,DM,61,_,2,2,Benign,Edema and postoperative scar,True,2,polygon,5.8736470951859365,2,False,,roi,False,False,False,False,False,False
+P102_R_DM_CC,102,R,CC,DM,39,D,3,3,Malignant,Focal asymmetrical increased density,True,1,polygon,7.813365981844243,1,False,,roi,False,False,False,False,False,False
+P102_R_DM_MLO,102,R,MLO,DM,39,D,3,3,Malignant,Focal asymmetrical increased density,True,1,polygon,5.385542535279838,1,False,,roi,False,False,False,False,False,False
+P103_R_DM_CC,103,R,CC,DM,48,C,3,3,Benign,Equal density circumscribed mass with partially obscured margin,True,1,circle,0.975329504349306,1,False,,roi,False,False,False,False,True,False
+P103_R_DM_MLO,103,R,MLO,DM,48,C,3,3,Benign,Equal density circumscribed mass with partially obscured margin,True,1,circle,0.8737712334964833,1,False,,roi,False,False,False,False,True,False
+P104_L_DM_MLO,104,L,MLO,DM,52,B,2,2,Benign,Edema and postoperative scar,True,3,polygon,10.717251834005577,3,False,,roi,False,False,False,False,False,False
+P105_R_DM_CC,105,R,CC,DM,63,B,4,4,Malignant,High density mass with microlobulated margin and edema pattern,True,4,polygon,20.438475608020024,3,False,,roi,False,False,False,False,False,False
+P105_R_DM_MLO,105,R,MLO,DM,63,B,4,4,Malignant,High density mass with microlobulated margin and edema pattern,True,3,polygon,17.1485659631058,2,False,,roi,False,False,False,False,False,False
+P106_R_DM_CC,106,R,CC,DM,47,C,2,2,Benign,IMLN,True,2,"circle,ellipse",0.2332594355718284,2,False,,roi,False,False,False,False,True,False
+P106_L_DM_MLO,106,L,MLO,DM,47,C,5,5,Malignant,Architectural distortion and focal skin thickening,True,2,polygon,2.027856938473541,1,False,,roi,False,False,False,False,False,False
+P107_R_DM_CC,107,R,CC,DM,35,C,5,5,Malignant,High density mass with speculated margin,True,2,polygon,15.660411711254245,2,False,,roi,False,False,False,False,False,False
+P107_R_DM_MLO,107,R,MLO,DM,35,C,3,3,Malignant,Nodular increased density,True,2,polygon,11.3631223809559,1,False,,roi,False,False,False,False,False,False
+P108_L_DM_CC,108,L,CC,DM,36,B,4,4,Malignant,High density mass with microlobulated margin and edema pattern with multiple calcific foci,True,3,polygon,8.336632044541206,2,False,,roi,False,False,False,False,False,False
+P110_L_DM_MLO,110,L,MLO,DM,54,B,5,5,Malignant,Clusters of pleomorphic microcalcification,True,1,polygon,10.13260914366104,1,False,,roi,False,False,False,False,False,False
+P111_R_DM_MLO,111,R,MLO,DM,44,C,3,3,Malignant,Equal density mass with lobulated margin,True,1,polygon,1.2046736736911214,1,False,,roi,False,False,False,False,False,False
+P113_R_DM_MLO,113,R,MLO,DM,67,B,2,2,Benign,Vascular calcifications,True,4,polygon,2.762525122021246,4,False,,roi,False,False,False,True,False,False
+P113_L_DM_CC,113,L,CC,DM,67,B,5$2,5,Malignant,High density mass with microlobulated margin and edema pattern$Vascular calcifications,True,5,polygon,13.849088430274213,5,False,,roi,False,False,False,False,False,False
+P113_L_DM_MLO,113,L,MLO,DM,67,B,5$2,5,Malignant,High density mass with microlobulated margin and edema pattern$Vascular calcifications,True,4,"ellipse,polygon",6.839111725381796,4,False,,roi,False,False,False,False,False,False
+P115_R_DM_CC,115,R,CC,DM,62,C,4,4,Malignant,Focal asymmetrical increased density with nipple retraction and edema pattern,True,1,polygon,12.97062636185869,1,False,,roi,False,False,False,False,False,False
+P115_R_DM_MLO,115,R,MLO,DM,62,C,4,4,Malignant,Focal asymmetrical increased density with nipple retraction and edema pattern,True,1,polygon,11.393745315800231,1,False,,roi,False,False,False,False,False,False
+P115_L_DM_CC,115,L,CC,DM,62,C,2,2,Benign,Benign macrocalcification,True,4,circle,0.1422210449304977,4,False,,roi,False,False,False,True,True,False
+P115_L_DM_MLO,115,L,MLO,DM,62,C,2,2,Benign,Benign macrocalcification,True,4,circle,0.1913354592828809,4,False,,roi,False,False,False,True,True,False
+P116_R_DM_CC,116,R,CC,DM,51,C,4,4,Malignant,Architectural distortion with overlying macrocalcification and edema pattern,True,3,"circle,polygon",9.004381204251885,2,False,,roi,False,False,False,False,False,False
+P116_R_DM_MLO,116,R,MLO,DM,51,C,4,4,Malignant,Architectural distortion with overlying macrocalcification and edema pattern,True,3,"circle,polygon",6.817852194660315,2,False,,roi,False,False,False,False,False,False
+P116_L_DM_MLO,116,L,MLO,DM,51,C,2,2,Benign,Benign macrocalcification,True,1,circle,0.0361875320553917,1,False,,roi,False,False,False,True,True,False
+P117_R_DM_CC,117,R,CC,DM,66,_,2,2,Benign,Edema and postoperative scar,True,3,polygon,5.058757024573538,3,False,,roi,False,False,False,False,False,False
+P118_L_DM_CC,118,L,CC,DM,43,_,2,2,Benign,Postoperative scar,True,2,polygon,8.240969029267823,2,False,,roi,False,False,False,False,False,False
+P119_R_DM_CC,119,R,CC,DM,59,C,2,2,Benign,Benign calcific foci,True,2,circle,0.0783719257469934,2,False,,roi,False,False,False,True,True,False
+P119_R_DM_MLO,119,R,MLO,DM,59,C,2,2,Benign,Benign calcific foci,True,2,circle,0.062328658683932,2,False,,roi,False,False,False,True,True,False
+P119_L_DM_CC,119,L,CC,DM,59,C,4,4,Malignant,Multiple high density masses with indistinct margin and edema pattern,True,5,polygon,20.1037009222753,2,False,,roi,False,False,False,False,False,False
+P119_L_DM_MLO,119,L,MLO,DM,59,C,4,4,Malignant,Multiple high density masses with indistinct margin and edema pattern,True,9,polygon,14.39809348900258,6,False,,roi,False,False,False,False,False,False
+P121_R_DM_MLO,121,R,MLO,DM,65,C,2,2,Benign,Benign macrocalcification,True,6,circle,0.3174903583073539,6,False,,roi,False,False,False,True,True,False
+P121_L_DM_CC,121,L,CC,DM,65,C,4$2,4,Malignant,Architectural distortion$Benign macrocalcification,True,4,"circle,polygon",2.588084110976693,4,False,,roi,False,False,False,False,False,False
+P122_R_DM_CC,122,R,CC,DM,57,C,4,4,Benign,Equal density mass with indistinct margin,True,1,polygon,3.410969901986883,1,False,,roi,False,False,False,False,False,False
+P122_R_DM_MLO,122,R,MLO,DM,57,C,4,4,Benign,High density mass with indistinct margin,True,1,polygon,2.0163199099591176,1,False,,roi,False,False,False,False,False,False
+P122_L_DM_CC,122,L,CC,DM,57,C,5,5,Malignant,Three high density masses with speculated margin and nipple retraction,True,3,polygon,6.665015654637799,3,False,,roi,False,False,False,False,False,False
+P122_L_DM_MLO,122,L,MLO,DM,57,C,5,5,Malignant,Three high density masses with speculated margin and nipple retraction,True,3,polygon,5.662447877440805,2,False,,roi,False,False,False,False,False,False
+P123_R_DM_CC,123,R,CC,DM,56,C,5,5,Malignant,Architectural distortion with overlying microcalcifications and edema pattern and nipple retraction,True,5,polygon,31.087657058388768,3,False,,roi,False,False,False,False,False,False
+P123_R_DM_MLO,123,R,MLO,DM,56,C,5,5,Malignant,Architectural distortion with overlying microcalcifications and edema pattern and nipple retraction,True,3,polygon,20.949847467116097,1,False,,roi,False,False,False,False,False,False
+P123_L_DM_CC,123,L,CC,DM,56,C,2,2,Benign,Vascular calcifications,True,2,polygon,1.8793280805729684,2,False,,roi,False,False,False,True,False,False
+P123_L_DM_MLO,123,L,MLO,DM,56,C,2,2,Benign,Vascular calcifications,True,2,polygon,1.7719487489805046,2,False,,roi,False,False,False,True,False,False
+P124_R_DM_CC,124,R,CC,DM,39,C,4,4,Malignant,Asymmetrical increased density with overlying microcalcifications,True,1,polygon,19.957864631160085,1,False,,roi,False,False,False,False,False,False
+P124_R_DM_MLO,124,R,MLO,DM,39,C,4,4,Malignant,Asymmetrical increased density with overlying microcalcifications,True,1,polygon,22.72958501516616,1,False,,roi,False,False,False,False,False,False
+P125_L_DM_CC,125,L,CC,DM,47,C,3,3,Benign,Equal density mass with circumscribed margin,True,1,ellipse,0.2915958641944163,1,False,,roi,False,False,False,False,True,False
+P125_L_DM_MLO,125,L,MLO,DM,47,C,3,3,Benign,Equal density mass with circumscribed margin,True,1,ellipse,0.3361509263922485,1,False,,roi,False,False,False,False,True,False
+P126_L_DM_CC,126,L,CC,DM,50,C,5,5,Malignant,High density mass with microlobulated margin,True,1,polygon,9.460931664571604,1,False,,roi,False,False,False,False,False,False
+P126_L_DM_MLO,126,L,MLO,DM,50,C,5,5,Malignant,High density mass with microlobulated margin,True,1,polygon,9.101062277105834,1,False,,roi,False,False,False,False,False,False
+P128_L_DM_CC,128,L,CC,DM,57,C,5,5,Benign,Asymmetrical increased density and equal density nodule with indistinct margin and overlying linear branching macrocalcifications,True,2,"ellipse,polygon",15.651839866487563,1,False,,roi,False,False,False,False,False,False
+P128_L_DM_MLO,128,L,MLO,DM,57,C,5,5,Benign,Asymmetrical increased density and equal density nodule with indistinct margin and overlying linear branching macrocalcifications,True,2,"circle,polygon",18.94244025019258,1,False,,roi,False,False,False,False,False,False
+P129_L_DM_CC,129,L,CC,DM,45,C,5,5,Malignant,High density mass with speculated margin,True,1,polygon,1.545169642222368,1,False,,roi,False,False,False,False,False,False
+P129_L_DM_MLO,129,L,MLO,DM,45,C,5,5,Malignant,High density mass with speculated margin,True,1,polygon,1.1732244667658465,1,False,,roi,False,False,False,False,False,False
+P131_L_DM_MLO,131,L,MLO,DM,30,C,3,3,Malignant,Global asymmetrical increased density,True,1,polygon,28.78730765314633,1,True,,roi,False,False,False,False,False,False
+P132_R_DM_MLO,132,R,MLO,DM,25,D,4,4,Benign,Equal density lobulated mass with indistinct margin,True,1,ellipse,2.9150442235314067,1,False,,roi,False,False,False,False,False,False
+P134_R_DM_MLO,134,R,MLO,DM,67,B,4,4,Malignant,High density mass with speculated margin with surrounding nodules and calcifications,True,3,polygon,5.902724231876396,2,False,,roi,False,False,False,False,False,False
+P136_L_DM_MLO,136,L,MLO,DM,47,_,2,2,Benign,Postoperative scar,True,1,polygon,3.309304549114332,1,False,,roi,False,False,False,False,False,False
+P137_L_DM_MLO,137,L,MLO,DM,45,B,1,1,Malignant,Normal,True,2,polygon,9.888941709405314,1,False,,roi,False,False,True,False,False,False
+P138_R_DM_CC,138,R,CC,DM,36,C,5,5,Malignant,High density mass with speculated margin and overlying microcalcification and nipple retraction,True,1,polygon,12.006669823229926,1,False,,roi,False,False,False,False,False,False
+P138_R_DM_MLO,138,R,MLO,DM,36,C,5,5,Malignant,High density mass with speculated margin and overlying microcalcification and nipple retraction,True,1,polygon,15.32589396449875,1,True,,roi,False,False,False,False,False,False
+P139_R_DM_CC,139,R,CC,DM,67,_,2,2,Benign,Edema and postoperative scar,True,3,polygon,13.701017033730018,2,False,,roi,False,False,False,False,False,False
+P139_R_DM_MLO,139,R,MLO,DM,67,_,2,2,Benign,Edema and postoperative scar,True,2,polygon,6.966136555030122,1,False,,roi,False,False,False,False,False,False
+P140_R_DM_CC,140,R,CC,DM,43,_,2,2,Benign,Edema and postoperative scar,True,2,polygon,7.999835237621157,2,False,,roi,False,False,False,False,False,False
+P140_R_DM_MLO,140,R,MLO,DM,43,_,2,2,Benign,Edema and postoperative scar,True,2,polygon,7.871410008360012,2,False,,roi,False,False,False,False,False,False
+P141_R_DM_CC,141,R,CC,DM,37,C,2,2,Benign,Benign macrocalcification,True,6,circle,1.12846529716793,6,False,,roi,False,False,False,True,False,False
+P141_R_DM_MLO,141,R,MLO,DM,37,C,2,2,Benign,Benign macrocalcification,True,5,circle,1.829190713787527,4,False,,roi,False,False,False,True,False,False
+P141_L_DM_CC,141,L,CC,DM,37,C,3$2,3,Benign,Focal asymmetrical increased density$Benign macrocalcification,True,4,circle,3.857960591964396,3,False,,roi,False,False,False,False,False,False
+P141_L_DM_MLO,141,L,MLO,DM,37,C,3$2,3,Benign,Focal asymmetrical increased density$Benign macrocalcification,True,2,circle,7.005430050309598,1,False,,roi,False,False,False,False,False,False
+P142_R_DM_CC,142,R,CC,DM,36,D,3,3,Benign,Oval equal density mass with circumscribed margin,True,1,ellipse,1.7080734096108183,1,True,,roi,False,False,False,False,False,False
+P142_R_DM_MLO,142,R,MLO,DM,36,D,3,3,Benign,Oval equal density mass with circumscribed margin,True,1,polygon,1.1918087690462318,1,False,,roi,False,False,False,False,False,False
+P143_R_DM_CC,143,R,CC,DM,48,_,2,2,Benign,Postoperative scar,True,1,polygon,2.1852417518702363,1,False,,roi,False,False,False,False,False,False
+P143_R_DM_MLO,143,R,MLO,DM,48,_,2,2,Benign,Postoperative scar,True,1,polygon,3.7017660798993184,1,False,,roi,False,False,False,False,False,False
+P143_L_DM_CC,143,L,CC,DM,48,C,1,1,Benign,Normal,True,1,ellipse,0.2111448118900019,1,False,,roi,False,False,True,False,True,False
+P144_R_DM_CC,144,R,CC,DM,47,_,2,2,Benign,Edema and postoperative scar,True,2,polygon,6.741171266039907,2,False,,roi,False,False,False,False,False,False
+P144_R_DM_MLO,144,R,MLO,DM,47,_,2,2,Benign,Edema and postoperative scar,True,2,polygon,8.075972667408768,2,False,,roi,False,False,False,False,False,False
+P144_L_DM_CC,144,L,CC,DM,47,C,2,2,Benign,Benign macrocalcification,True,1,circle,0.0335556653491436,1,False,,roi,False,False,False,True,True,False
+P144_L_DM_MLO,144,L,MLO,DM,47,C,2,2,Benign,Benign macrocalcification,True,1,circle,0.0618230124667892,1,False,,roi,False,False,False,True,True,False
+P145_R_DM_CC,145,R,CC,DM,50,C,2,2,Benign,Benign macrocalcification,True,2,circle,0.0817562537905492,2,False,,roi,False,False,False,True,True,False
+P145_R_DM_MLO,145,R,MLO,DM,50,C,2,2,Benign,Benign macrocalcification,True,2,circle,0.1312004166910914,2,False,,roi,False,False,False,True,True,False
+P145_L_DM_CC,145,L,CC,DM,50,C,5,5,Malignant,Asymmetrical increased density with overlying microcalcifications,True,1,polygon,10.525897613227816,1,False,,roi,False,False,False,False,False,False
+P145_L_DM_MLO,145,L,MLO,DM,50,C,5,5,Malignant,Asymmetrical increased density with overlying microcalcifications,True,1,polygon,10.781061033620896,1,False,,roi,False,False,False,False,False,False
+P146_R_DM_CC,146,R,CC,DM,46,C,4,4,Malignant,Multiple high density masses with speculated margin,True,5,polygon,5.901701529602795,5,False,,roi,False,False,False,False,False,False
+P146_R_DM_MLO,146,R,MLO,DM,46,C,4,4,Malignant,Multiple high density masses with indistinct margin,True,4,polygon,3.534378912151818,4,True,,roi,False,False,False,False,False,False
+P148_R_DM_CC,148,R,CC,DM,63,B,3,3,Benign,Equal density mass with circumscribed margin and dilated retroareolar ducts,True,3,"ellipse,polygon",1.2153615159784923,3,False,,roi,False,False,False,False,False,False
+P148_R_DM_MLO,148,R,MLO,DM,63,B,3,3,Benign,Equal density mass with circumscribed margin and dilated retroareolar ducts,True,3,"ellipse,polygon",1.0753680247419932,3,False,,roi,False,False,False,False,False,False
+P149_R_DM_CC,149,R,CC,DM,45,B,2,2,Malignant,Pop corn macrocalcification,True,3,"circle,ellipse",1.3350746434714194,3,False,,roi,False,False,False,True,False,False
+P149_R_DM_MLO,149,R,MLO,DM,45,B,2,2,Malignant,Pop corn macrocalcification,True,3,"circle,ellipse",2.1271292193455893,3,False,,roi,False,False,False,True,False,False
+P149_L_DM_CC,149,L,CC,DM,45,B,2,2,Benign,Pop corn macrocalcification,True,5,ellipse,1.280742168867557,5,False,,roi,False,False,False,True,False,False
+P149_L_DM_MLO,149,L,MLO,DM,45,B,2,2,Benign,Pop corn macrocalcification,True,4,"ellipse,polygon",1.4743068820303162,4,False,,roi,False,False,False,True,False,False
+P150_L_DM_CC,150,L,CC,DM,44,C,3,3,Malignant,Asymmetrical increased density,True,1,polygon,28.51443259038825,1,False,,roi,False,False,False,False,False,False
+P150_L_DM_MLO,150,L,MLO,DM,44,C,3,3,Malignant,Asymmetrical increased density,True,1,polygon,20.830906322490986,1,False,,roi,False,False,False,False,False,False
+P151_L_DM_CC,151,L,CC,DM,57,_,2,2,Benign,Edema and postoperative scar with flap,True,3,polygon,11.147262370852904,3,False,,roi,False,False,False,False,False,False
+P152_R_DM_CC,152,R,CC,DM,69,B,2,2,Benign,Benign macrocalcification,True,10,circle,1.846320554385536,10,False,,roi,False,False,False,True,False,False
+P152_L_DM_CC,152,L,CC,DM,69,B,5,5,Malignant,High density mass with speculated margin and ductal extension with scattered calcifications,True,4,polygon,4.734763813624792,3,False,,roi,False,False,False,False,False,False
+P152_L_DM_MLO,152,L,MLO,DM,69,B,5,5,Malignant,High density mass with speculated margin and ductal extension with scattered calcifications,True,3,polygon,4.236640060299504,3,False,,roi,False,False,False,False,False,False
+P153_R_DM_MLO,153,R,MLO,DM,67,B,3$2,3,Benign,Equal density mass with circumscribed margin$IMLN,True,3,"circle,ellipse,polygon",0.8274169624852091,3,False,,roi,False,False,False,False,True,False
+P153_L_DM_CC,153,L,CC,DM,67,B,3$2$2,3,Benign,Equal density mass with circumscribed margin$IMLN$Benign macrocalcification,True,9,"circle,ellipse,polygon",6.882742970477635,9,False,,roi,False,False,False,False,False,False
+P153_L_DM_MLO,153,L,MLO,DM,67,B,3$2$2,3,Benign,Equal density mass with circumscribed margin$IMLN$Benign macrocalcification,True,6,"circle,polygon",8.894543562565413,5,False,,roi,False,False,False,False,False,False
+P154_L_DM_CC,154,L,CC,DM,54,_,4,4,Malignant,Postoperative scar and asymmetrical increased density,True,1,polygon,3.750844977767808,1,False,,roi,False,False,False,False,False,False
+P154_L_DM_MLO,154,L,MLO,DM,54,_,4,4,Malignant,Postoperative scar and asymmetrical increased density,True,1,polygon,2.9658576667839363,1,False,,roi,False,False,False,False,False,False
+P155_L_DM_CC,155,L,CC,DM,53,C,4,4,Malignant,Diffuse edematous changes,True,7,polygon,21.578212290502798,6,False,,roi,False,False,False,False,False,False
+P155_L_DM_MLO,155,L,MLO,DM,53,C,4,4,Malignant,Diffuse edematous changes,True,7,polygon,13.451306390557477,3,False,,roi,False,False,False,False,False,False
+P156_R_DM_CC,156,R,CC,DM,38,C,4$2,4,Benign,Diffuse edematous changes$IMLN,True,2,"circle,polygon",3.252007817336421,2,False,,roi,False,False,False,False,False,False
+P156_R_DM_MLO,156,R,MLO,DM,38,C,4$2,4,Benign,Diffuse edematous changes$IMLN,True,2,"circle,polygon",2.5584098091489924,2,False,,roi,False,False,False,False,False,False
+P159_L_DM_CC,159,L,CC,DM,46,_,2,2,Benign,Edema and postoperative scar,True,2,polygon,8.531079738203749,2,False,,roi,False,False,False,False,False,False
+P160_R_DM_CC,160,R,CC,DM,61,_,2,2,Benign,Edema and postoperative scar with flap and dystophic calcifications,True,16,"circle,ellipse,polygon",4.850979810832067,14,False,,roi,False,False,False,False,False,False
+P160_L_DM_CC,160,L,CC,DM,61,_,2,2,Benign,Edema and postoperative scar$ Benign macrocalcification,True,4,"circle,polygon",6.618901043146311,4,False,,roi,False,False,False,True,False,False
+P161_R_DM_CC,161,R,CC,DM,49,B,3,3,Benign,Equal density mass with circumscribed margin,True,1,ellipse,2.048960853711376,1,False,,roi,False,False,False,False,False,False
+P161_R_DM_MLO,161,R,MLO,DM,49,B,3,3,Benign,Equal density mass with circumscribed margin,True,1,circle,2.3720660324835734,1,False,,roi,False,False,False,False,False,False
+P161_L_DM_CC,161,L,CC,DM,49,B,4$2,4,Benign,High density mass with indistinct margin$Benign macrocalcification,True,1,polygon,4.743637708639792,1,False,,roi,False,False,False,False,False,False
+P161_L_DM_MLO,161,L,MLO,DM,49,B,4$2,4,Benign,High density mass with indistinct margin$Benign macrocalcification,True,1,polygon,6.024129459077371,1,False,,roi,False,False,False,False,False,False
+P162_R_DM_CC,162,R,CC,DM,29,C,4,4,Malignant,Asymmetrical increased density and cluster of microcalcifications,True,1,polygon,26.82916903768925,1,False,,roi,False,False,False,False,False,False
+P162_R_DM_MLO,162,R,MLO,DM,29,C,4,4,Malignant,High density mass with indistinct margin,True,1,polygon,19.93688905939123,1,False,,roi,False,False,False,False,False,False
+P163_R_DM_CC,163,R,CC,DM,67,B,5,5,Malignant,High density mass with speculated margin and ductal extension and edema pattern,True,2,polygon,11.41481401314278,1,False,,roi,False,False,False,False,False,False
+P164_L_DM_CC,164,L,CC,DM,47,C,2,2,Benign,Benign macrocalcification,True,4,circle,0.242751919994187,4,False,,roi,False,False,False,True,True,False
+P165_R_DM_CC,165,R,CC,DM,56,C,3$2,3,Benign,Equal density mass with circumscribed margin$Vascular calcifications,True,2,"circle,polygon",1.688065641984018,2,False,,roi,False,False,False,False,False,False
+P165_R_DM_MLO,165,R,MLO,DM,56,C,3$2,3,Benign,Equal density mass with circumscribed margin$Vascular calcifications,True,2,"circle,polygon",1.600034450832203,2,False,,roi,False,False,False,False,False,False
+P165_L_DM_CC,165,L,CC,DM,56,C,4$2,4,Malignant,Asymmetrical increased density with overlying microcalcification$Vascular calcifications,True,5,"circle,ellipse,polygon",3.072739761271394,3,False,,roi,False,False,False,False,False,False
+P165_L_DM_MLO,165,L,MLO,DM,56,C,4$2,4,Malignant,Asymmetrical increased density with overlying microcalcification$Vascular calcifications,True,3,"circle,polygon",4.126318244790636,3,False,,roi,False,False,False,False,False,False
+P167_L_DM_MLO,167,L,MLO,DM,54,C,1,1,Benign,Normal,True,1,polygon,10.535259559783716,1,False,,roi,False,False,True,False,False,False
+P168_L_DM_MLO,168,L,MLO,DM,70,B,5,5,Malignant,Multiple high density masses with microlobulated margin and edema pattern,True,10,polygon,13.997240920938726,9,False,,roi,False,False,False,False,False,False
+P169_R_DM_CC,169,R,CC,DM,50,B,5,5,Malignant,Diffuse edematous changes with nipple retraction,True,2,polygon,38.04561372617859,1,False,,roi,False,False,False,False,False,False
+P169_L_DM_CC,169,L,CC,DM,50,B,2,2,Benign,Benign macrocalcification,True,2,circle,0.1056479088449989,2,False,,roi,False,False,False,True,True,False
+P169_L_DM_MLO,169,L,MLO,DM,50,B,2,2,Benign,Benign macrocalcification,True,2,circle,0.148423995078592,2,False,,roi,False,False,False,True,True,False
+P170_R_DM_CC,170,R,CC,DM,51,C,1,1,Benign,Normal,True,1,polygon,21.91074045146173,1,False,,roi,False,False,True,False,False,False
+P170_R_DM_MLO,170,R,MLO,DM,51,C,1,1,Benign,Normal,True,1,polygon,20.295432890808613,1,False,,roi,False,False,True,False,False,False
+P170_L_DM_CC,170,L,CC,DM,51,C,1,1,Benign,Normal,True,1,polygon,28.370872303874783,1,False,,roi,False,False,True,False,False,False
+P170_L_DM_MLO,170,L,MLO,DM,51,C,1,1,Benign,Normal,True,1,polygon,29.737813653713783,1,False,,roi,False,False,True,False,False,False
+P171_L_DM_MLO,171,L,MLO,DM,56,C,3,3,Benign,Equal density mass with circumscribed margin,True,2,"ellipse,polygon",30.99423215852711,1,False,,roi,False,False,False,False,False,False
+P172_R_DM_CC,172,R,CC,DM,53,B,3,3,Benign,Multiple equal density masses with circumscribed margin,True,5,ellipse,7.122311579756624,2,False,,roi,False,False,False,False,False,False
+P172_R_DM_MLO,172,R,MLO,DM,53,B,3,3,Benign,Multiple equal density masses with circumscribed margin,True,5,"circle,ellipse",3.589992406156048,2,False,,roi,False,False,False,False,False,False
+P172_L_DM_CC,172,L,CC,DM,53,B,5,5,Malignant,Two high density masses with speculated margin and ductal extension,True,6,polygon,6.173728948474727,4,False,,roi,False,False,False,False,False,False
+P172_L_DM_MLO,172,L,MLO,DM,53,B,5,5,Malignant,Two high density masses with speculated margin and ductal extension,True,2,polygon,8.74410462376366,2,False,,roi,False,False,False,False,False,False
+P173_L_DM_CC,173,L,CC,DM,90,_,4,4,Malignant,Flap with high density mass with microlobulated margin,True,2,polygon,29.478341307814997,1,False,,roi,False,False,False,False,False,False
+P173_L_DM_MLO,173,L,MLO,DM,90,_,4,4,Malignant,Flap with high density mass with microlobulated margin,True,2,polygon,16.162890670384574,1,False,,roi,False,False,False,False,False,False
+P174_R_DM_CC,174,R,CC,DM,53,_,2,2,Benign,Edema and postoperative scar,True,2,polygon,9.128430317551956,2,False,,roi,False,False,False,False,False,False
+P174_R_DM_MLO,174,R,MLO,DM,53,_,2,2,Benign,Edema and postoperative scar,True,3,"polygon,polyline",11.19876110773189,2,False,,roi,False,False,False,False,False,False
+P174_L_DM_CC,174,L,CC,DM,53,B,4$2,4,Malignant,High density mass with microlobulated margin$Benign macrocalcification,True,3,"circle,polygon",0.3411345457426474,3,False,,roi,False,False,False,False,True,False
+P174_L_DM_MLO,174,L,MLO,DM,53,B,4$2,4,Malignant,High density mass with microlobulated margin$Benign macrocalcification,True,2,"circle,polygon",0.2752108563445965,2,False,,roi,False,False,False,False,True,False
+P176_R_DM_CC,176,R,CC,DM,47,C,4,4,Malignant,Regional microcalcifications with clusters and edema pattern,True,2,polygon,42.86885569457432,2,False,,roi,False,False,False,False,False,False
+P176_R_DM_MLO,176,R,MLO,DM,47,C,4,4,Malignant,Regional microcalcifications with clusters and edema pattern,True,2,polygon,28.44851922754581,2,False,,roi,False,False,False,False,False,False
+P177_R_DM_CC,177,R,CC,DM,50,B,5,5,Malignant,High density mass with indistinct margin and edema pattern and nipple retraction,True,3,polygon,16.34096888368551,3,False,,roi,False,False,False,False,False,False
+P177_R_DM_MLO,177,R,MLO,DM,50,B,5,5,Malignant,High density mass with indistinct margin and edema pattern and nipple retraction,True,3,polygon,11.087402886637683,3,False,,roi,False,False,False,False,False,False
+P177_L_DM_CC,177,L,CC,DM,50,B,3,3,Benign,Equal density mass with circumscribed margin,True,1,ellipse,0.5700544875637797,1,False,,roi,False,False,False,False,True,False
+P177_L_DM_MLO,177,L,MLO,DM,50,B,3,3,Benign,Equal density mass with circumscribed margin,True,1,polygon,0.1788074943536389,1,False,,roi,False,False,False,False,True,False
+P179_L_DM_CC,179,L,CC,DM,18,D,1,1,Benign,Normal,True,2,polygon,4.946194981489099,2,False,,roi,False,False,True,False,False,False
+P179_L_DM_MLO,179,L,MLO,DM,18,D,1,1,Benign,Normal,True,1,polygon,3.641154953870495,1,False,,roi,False,False,True,False,False,False
+P180_R_DM_CC,180,R,CC,DM,81,B,4,4,Malignant,High density mass with microlobulated margin,True,1,polygon,4.296074418443084,1,False,,roi,False,False,False,False,False,False
+P180_R_DM_MLO,180,R,MLO,DM,81,B,4,4,Malignant,High density mass with microlobulated margin,True,1,polygon,5.289427670272486,1,False,,roi,False,False,False,False,False,False
+P180_L_DM_CC,180,L,CC,DM,81,B,1,1,Benign,Normal,True,1,polygon,13.999625162613276,1,False,,roi,False,False,True,False,False,False
+P180_L_DM_MLO,180,L,MLO,DM,81,B,1,1,Benign,Normal,True,1,polygon,12.175734061018712,1,False,,roi,False,False,True,False,False,False
+P181_L_DM_CC,181,L,CC,DM,48,C,3,3,Benign,Asymmetrical increased density and IMLN,True,1,polygon,12.63648824506642,1,False,,roi,False,False,False,False,False,False
+P181_L_DM_MLO,181,L,MLO,DM,48,C,3,3,Benign,Asymmetrical increased density and IMLN,True,1,polygon,11.99741292464696,1,False,,roi,False,False,False,False,False,False
+P182_R_DM_MLO,182,R,MLO,DM,47,_,2,2,Benign,Postoperative scar,True,1,polygon,0.8626409225663049,1,False,,roi,False,False,False,False,True,False
+P183_L_DM_CC,183,L,CC,DM,58,D,4,4,Malignant,Diffuse edematous changes,True,2,polygon,7.681438637168847,2,False,,roi,False,False,False,False,False,False
+P183_L_DM_MLO,183,L,MLO,DM,58,D,4,4,Malignant,Diffuse edematous changes,True,2,polygon,7.727933081820848,2,False,,roi,False,False,False,False,False,False
+P184_R_DM_CC,184,R,CC,DM,54,_,5,5,Malignant,Postoperative scar and multiple high density masses with speculated margin,True,3,polygon,13.16329502453856,3,True,,roi,False,False,False,False,False,False
+P184_R_DM_MLO,184,R,MLO,DM,54,_,5,5,Malignant,Postoperative scar and multiple high density masses with speculated margin,True,4,polygon,13.446016812647354,4,True,,roi,False,False,False,False,False,False
+P184_L_DM_CC,184,L,CC,DM,54,_,2,2,Benign,Postoperative scar,True,1,polygon,1.3162176577853346,1,False,,roi,False,False,False,False,False,False
+P184_L_DM_MLO,184,L,MLO,DM,54,_,2,2,Benign,Postoperative scar,True,1,polygon,2.567482387838339,1,False,,roi,False,False,False,False,False,False
+P186_R_DM_CC,186,R,CC,DM,47,_,2,2,Benign,Postoperative scar$Benign macrocalcifications,True,5,"circle,polygon",2.570022853041721,4,False,,roi,False,False,False,True,False,False
+P186_L_DM_CC,186,L,CC,DM,47,_,2$4,4,Malignant,Postoperative scar$ cluster of microcalcifications,True,4,polygon,4.241330294894068,4,False,,roi,False,False,False,False,False,False
+P186_L_DM_MLO,186,L,MLO,DM,47,_,2$4,4,Malignant,Postoperative scar$ cluster of microcalcifications,True,3,polygon,5.086640847456075,3,False,,roi,False,False,False,False,False,False
+P187_R_DM_CC,187,R,CC,DM,74,C,4,4,Malignant,Asymmetrical increased density and dilated retroareolar duct,True,1,polygon,10.805030929144404,1,False,,roi,False,False,False,False,False,False
+P187_L_DM_CC,187,L,CC,DM,74,C,2,2,Benign,Dilated retroareolar duct,True,1,polygon,3.228469564742552,1,False,,roi,False,False,False,False,False,False
+P188_R_DM_CC,188,R,CC,DM,52,B,5,5,Malignant,High density mass with speculated margin and edema pattern,True,2,polygon,9.345932446819283,2,False,,roi,False,False,False,False,False,False
+P188_R_DM_MLO,188,R,MLO,DM,52,B,5,5,Malignant,High density mass with speculated margin and edema pattern,True,2,polygon,8.08231319290749,2,False,,roi,False,False,False,False,False,False
+P189_R_DM_MLO,189,R,MLO,DM,43,C,1,1,Benign,Normal,True,1,polygon,2.6739706156142224,1,False,,roi,False,False,True,False,False,False
+P189_L_DM_CC,189,L,CC,DM,43,C,4,4,Benign,Three ill defined high density masses,True,5,"circle,ellipse",5.508526908391055,3,False,,roi,False,False,False,False,False,False
+P190_L_DM_CC,190,L,CC,DM,54,B,4,4,Malignant,High density mass with speculated margin and edema pattern,True,1,polygon,1.5723141621264414,1,False,,roi,False,False,False,False,False,False
+P190_L_DM_MLO,190,L,MLO,DM,54,B,4,4,Malignant,High density mass with speculated margin and edema pattern,True,1,polygon,1.7418078558901997,1,False,,roi,False,False,False,False,False,False
+P191_R_DM_CC,191,R,CC,DM,66,B,3$2,3,Benign,Equal density mass with circumscribed margin$Benign macrocalcification,True,3,"ellipse,polygon",11.99325596007391,1,False,,roi,False,False,False,False,False,False
+P191_R_DM_MLO,191,R,MLO,DM,66,B,3$2,3,Benign,Equal density mass with circumscribed margin$Benign macrocalcification,True,3,"ellipse,polygon",18.8903129714388,2,False,,roi,False,False,False,False,False,False
+P191_L_DM_CC,191,L,CC,DM,66,B,4,4,Malignant,Multiple high density masses with indistinct margin,True,8,polygon,3.557370250666455,8,False,,roi,False,False,False,False,False,False
+P191_L_DM_MLO,191,L,MLO,DM,66,B,4,4,Malignant,Multiple high density masses with indistinct margin,True,8,polygon,3.657058311670844,6,False,,roi,False,False,False,False,False,False
+P192_R_DM_CC,192,R,CC,DM,40,D,2,2,Benign,Benign macrocalcification,True,4,"circle,ellipse",0.1878607193364675,4,False,,roi,False,False,False,True,True,False
+P192_R_DM_MLO,192,R,MLO,DM,40,D,2,2,Benign,Benign macrocalcification,True,4,circle,0.1650442397665155,4,False,,roi,False,False,False,True,True,False
+P192_L_DM_CC,192,L,CC,DM,40,D,2,2,Benign,Benign macrocalcification,True,6,circle,0.249573808918009,6,False,,roi,False,False,False,True,True,False
+P192_L_DM_MLO,192,L,MLO,DM,40,D,2,2,Benign,Benign macrocalcification,True,3,circle,0.150126422250316,3,False,,roi,False,False,False,True,True,False
+P193_L_DM_MLO,193,L,MLO,DM,47,C,2,2,Benign,IMLN,True,1,ellipse,0.2785754331268545,1,False,,roi,False,False,False,False,True,False
+P194_R_DM_CC,194,R,CC,DM,77,D,5,5,Malignant,High density mass with indistinct margin and overlying segmental microcalcification,True,2,polygon,19.20799268410471,1,False,,roi,False,False,False,False,False,False
+P194_R_DM_MLO,194,R,MLO,DM,77,D,5,5,Malignant,High density mass with indistinct margin and overlying segmental microcalcification,True,2,polygon,18.71599026455864,1,False,,roi,False,False,False,False,False,False
+P195_L_DM_CC,195,L,CC,DM,65,C,4$2,4,Malignant,Diffuse edematous changes$Benign macrocalcifications,True,4,"circle,polygon",35.09422748277494,1,False,,roi,False,False,False,True,False,False
+P195_L_DM_MLO,195,L,MLO,DM,65,C,4$2,4,Malignant,Diffuse edematous changes$Benign macrocalcifications,True,4,"circle,polygon",16.681963019934585,1,False,,roi,False,False,False,True,False,False
+P196_R_DM_MLO,196,R,MLO,DM,31,C,4,4,Malignant,Two equal density masses with indistinct margin and architectural distortion,True,4,polygon,18.940971136161743,3,False,,roi,False,False,False,False,False,False
+P196_L_DM_CC,196,L,CC,DM,31,C,1,1,Benign,Normal,True,1,polygon,0.2184402631480767,1,False,,roi,False,False,True,False,True,False
+P196_L_DM_MLO,196,L,MLO,DM,31,C,1,1,Benign,Normal,True,1,ellipse,0.3213381210714563,1,False,,roi,False,False,True,False,True,False
+P197_R_DM_CC,197,R,CC,DM,61,_,2,2,Benign,Edema and postoperative scar,True,2,polygon,7.769582413760015,1,False,,roi,False,False,False,False,False,False
+P197_R_DM_MLO,197,R,MLO,DM,61,_,2,2,Benign,Edema and postoperative scar,True,5,polygon,12.533957753873306,5,False,,roi,False,False,False,False,False,False
+P197_L_DM_CC,197,L,CC,DM,61,B,2,2,Benign,Benign macrocalcification,True,2,circle,0.0962741247466141,2,False,,roi,False,False,False,True,True,False
+P198_L_DM_CC,198,L,CC,DM,52,_,5,5,Malignant,Postoperative scar with two high density masses with speculated margin and surrounding satellites,True,9,polygon,10.0775949963885,7,False,,roi,False,False,False,False,False,False
+P198_L_DM_MLO,198,L,MLO,DM,52,_,5,5,Malignant,Postoperative scar with two high density masses with speculated margin and surrounding satellites,True,8,polygon,15.404433544474225,4,False,,roi,False,False,False,False,False,False
+P200_L_DM_CC,200,L,CC,DM,50,C,2,2,Benign,Benign macrocalcification,True,2,circle,0.0612093799151996,2,False,,roi,False,False,False,True,True,False
+P200_L_DM_MLO,200,L,MLO,DM,50,C,2,2,Benign,Benign macrocalcification,True,2,circle,0.0581894225498785,2,False,,roi,False,False,False,True,True,False
+P202_L_DM_CC,202,L,CC,DM,58,B,4$2,4,Malignant,Diffuse edematous changes$Benign macrocalcification,True,3,"ellipse,polygon",4.857839584721696,3,False,,roi,False,False,False,True,False,False
+P202_L_DM_MLO,202,L,MLO,DM,58,B,4$2,4,Malignant,Diffuse edematous changes$Benign macrocalcification,True,4,"ellipse,polygon",6.676322854323044,4,False,,roi,False,False,False,True,False,False
+P203_R_DM_CC,203,R,CC,DM,43,B,2,2,Benign,Dilated retroareolar duct,True,1,polygon,1.276073447049152,1,False,,roi,False,False,False,False,False,False
+P203_R_DM_MLO,203,R,MLO,DM,43,B,2,2,Benign,Dilated retroareolar duct,True,1,polygon,0.3805017205111167,1,False,,roi,False,False,False,False,True,False
+P205_L_DM_MLO,205,L,MLO,DM,40,C,4,4,Malignant,High density mass with microlobulated margin and edema pattern,True,1,polygon,2.6520333525396924,1,False,,roi,False,False,False,False,False,False
+P206_L_DM_CC,206,L,CC,DM,37,B,4,4,Malignant,High density mass with indistinct margin and edema pattern,True,2,polygon,6.655528946668188,2,False,,roi,False,False,False,False,False,False
+P206_L_DM_MLO,206,L,MLO,DM,37,B,4,4,Malignant,High density mass with indistinct margin and edema pattern,True,3,polygon,5.7547521336917375,3,False,,roi,False,False,False,False,False,False
+P207_L_DM_CC,207,L,CC,DM,55,C,4,4,Malignant,Architectural distortion,True,1,polygon,3.8098283563770527,1,False,,roi,False,False,False,False,False,False
+P207_L_DM_MLO,207,L,MLO,DM,55,C,4,4,Malignant,Architectural distortion,True,1,polygon,3.3646970191405097,1,False,,roi,False,False,False,False,False,False
+P208_R_DM_CC,208,R,CC,DM,43,C,4,4,Malignant,Cluster of microcalcifications,True,1,polygon,0.603444300721956,1,False,,roi,False,False,False,False,True,False
+P208_R_DM_MLO,208,R,MLO,DM,43,C,5,5,Malignant,Equal density mass with speculated margin with adjacent cluster of microcalcifications,True,2,polygon,0.79558762749942,2,False,,roi,False,False,False,False,True,False
+P209_R_DM_CC,209,R,CC,DM,31,D,1,1,Benign,Normal,True,1,polygon,26.15379119832349,1,False,,roi,False,False,True,False,False,False
+P209_R_DM_MLO,209,R,MLO,DM,31,D,1,1,Benign,Normal,True,1,polygon,25.74368189909517,1,False,,roi,False,False,True,False,False,False
+P209_L_DM_CC,209,L,CC,DM,31,D,5,5,Malignant,High density mass with microlobulated margin and edema pattern,True,2,polygon,16.01639944460179,2,False,,roi,False,False,False,False,False,False
+P209_L_DM_MLO,209,L,MLO,DM,31,D,5,5,Malignant,High density mass with microlobulated margin and edema pattern,True,2,polygon,17.32581059724562,2,False,,roi,False,False,False,False,False,False
+P210_L_DM_CC,210,L,CC,DM,54,C,2,2,Benign,Benign macrocalcification$IMLN,True,8,circle,1.503894880397243,8,False,,roi,False,False,False,True,False,False
+P210_L_DM_MLO,210,L,MLO,DM,54,C,2,2,Benign,Benign macrocalcification$IMLN,True,8,"circle,ellipse",2.3626073960745986,8,False,,roi,False,False,False,True,False,False
+P211_L_DM_CC,211,L,CC,DM,49,D,3,3,Malignant,Multiple equal density masses with circumscribed margin,True,4,"ellipse,polygon",19.08779615484305,1,False,,roi,False,False,False,False,False,False
+P211_L_DM_MLO,211,L,MLO,DM,49,D,3,3,Malignant,Multiple equal density masses with circumscribed margin,True,4,"ellipse,polygon",20.54160635186744,1,False,,roi,False,False,False,False,False,False
+P212_L_DM_CC,212,L,CC,DM,41,C,5,5,Malignant,Multiple high density masses with speculated margin and edema pattern,True,2,polygon,19.52537635336238,2,False,,roi,False,False,False,False,False,False
+P212_L_DM_MLO,212,L,MLO,DM,41,C,5,5,Malignant,Multiple high density masses with speculated margin and edema pattern,True,5,polygon,19.83372855036635,5,False,,roi,False,False,False,False,False,False
+P213_L_DM_CC,213,L,CC,DM,45,B,4,4,Malignant,Architectural distortion and nipple retraction,True,4,polygon,16.482275858899715,3,False,,roi,False,False,False,False,False,False
+P213_L_DM_MLO,213,L,MLO,DM,45,B,4,4,Malignant,Architectural distortion and nipple retraction,True,4,polygon,14.505853622306397,2,False,,roi,False,False,False,False,False,False
+P214_L_DM_MLO,214,L,MLO,DM,45,C,1,1,Malignant,Normal,True,1,polygon,2.935728763818596,1,False,,roi,False,False,True,False,False,False
+P215_L_DM_CC,215,L,CC,DM,90,B,5,5,Malignant,High density mass with speculated margin,True,1,polygon,2.655394502069496,1,False,,roi,False,False,False,False,False,False
+P216_R_DM_CC,216,R,CC,DM,50,B,5,5,Malignant,High density mass with speculated margin and edema pattern,True,4,polygon,20.86962790047188,2,False,,roi,False,False,False,False,False,False
+P216_R_DM_MLO,216,R,MLO,DM,50,B,5,5,Malignant,High density mass with speculated margin and edema pattern,True,9,polygon,23.341534466352837,5,True,,roi,False,False,False,False,False,False
+P217_L_DM_CC,217,L,CC,DM,48,C,3,3,Benign,Equal density mass with partially obscured margin,True,1,ellipse,0.9943533746863612,1,False,,roi,False,False,False,False,True,False
+P217_L_DM_MLO,217,L,MLO,DM,48,C,3,3,Benign,Equal density mass with partially obscured margin,True,1,ellipse,0.5205031435025508,1,False,,roi,False,False,False,False,True,False
+P218_L_DM_MLO,218,L,MLO,DM,36,C,4,4,Malignant,Asymmetrical increased density with overlying microcalcification,True,5,polygon,18.58097574207773,5,True,,roi,False,False,False,False,False,False
+P220_R_DM_CC,220,R,CC,DM,68,B,5,5,Malignant,High density mass with speculated margin and edema pattern with asymmetrical increased density and overlying microcalcifications,True,9,polygon,22.839506172839503,4,False,,roi,False,False,False,False,False,False
+P220_R_DM_MLO,220,R,MLO,DM,68,B,5,5,Malignant,High density mass with speculated margin and edema pattern with asymmetrical increased density and overlying microcalcifications,True,9,polygon,15.103230057036942,3,False,,roi,False,False,False,False,False,False
+P221_L_DM_CC,221,L,CC,DM,44,C,1,1,Malignant,Normal,True,5,polygon,2.199809209251262,5,False,,roi,False,False,True,False,False,False
+P223_L_DM_CC,223,L,CC,DM,39,B,4,4,Malignant,Asymmetrical increased density and high density mass with indistinct margin,True,6,polygon,4.94207627318126,4,False,,roi,False,False,False,False,False,False
+P223_L_DM_MLO,223,L,MLO,DM,39,B,4,4,Malignant,Asymmetrical increased density and high density mass with indistinct margin,True,4,polygon,4.35262768653314,3,False,,roi,False,False,False,False,False,False
+P224_L_DM_CC,224,L,CC,DM,58,B,1,1,Benign,Normal,True,1,polygon,31.169144823253408,1,False,,roi,False,False,True,False,False,False
+P225_L_DM_CC,225,L,CC,DM,41,_,2,2,Benign,Postoperative scar,True,2,polygon,6.024257418703522,2,False,,roi,False,False,False,False,False,False
+P225_L_DM_MLO,225,L,MLO,DM,41,_,2,2,Benign,Postoperative scar,True,3,polygon,12.0077780110199,3,False,,roi,False,False,False,False,False,False
+P227_R_DM_CC,227,R,CC,DM,51,B,3,3,Benign,Asymmetrical increased density with overlying loose clusters of microcalcifications,True,1,polygon,2.1253154985253597,1,False,,roi,False,False,False,False,False,False
+P227_R_DM_MLO,227,R,MLO,DM,51,B,3,3,Benign,Asymmetrical increased density with overlying loose clusters of microcalcifications,True,1,polygon,1.8537929869430327,1,False,,roi,False,False,False,False,False,False
+P228_R_DM_CC,228,R,CC,DM,49,C,3,3,Benign,Equal density mass with obscured margin,True,1,ellipse,0.814726966547449,1,False,,roi,False,False,False,False,True,False
+P228_R_DM_MLO,228,R,MLO,DM,49,C,3,3,Benign,Equal density mass with obscured margin,True,1,circle,1.0636704119850189,1,False,,roi,False,False,False,False,False,False
+P228_L_DM_CC,228,L,CC,DM,49,_,2,2,Benign,Postoperative scar,True,2,polygon,3.467507556382236,1,False,,roi,False,False,False,False,False,False
+P228_L_DM_MLO,228,L,MLO,DM,49,_,2,2,Benign,Postoperative scar,True,3,polygon,4.615134704385938,3,False,,roi,False,False,False,False,False,False
+P229_R_DM_MLO,229,R,MLO,DM,52,B,3,3,Benign,Equal density mass with lobulated margin,True,1,polygon,0.4724579082009293,1,False,,roi,False,False,False,False,True,False
+P231_R_DM_MLO,231,R,MLO,DM,50,B,3,3,Benign,Asymmetrical increased density,True,1,polygon,2.9769496402631543,1,False,,roi,False,False,False,False,False,False
+P232_L_DM_CC,232,L,CC,DM,39,C,5,5,Malignant,High density mass with speculated margin,True,1,polygon,2.1698894545651357,1,False,,roi,False,False,False,False,False,False
+P232_L_DM_MLO,232,L,MLO,DM,39,C,5,5,Malignant,High density mass with speculated margin,True,1,polygon,1.5285747843887378,1,False,,roi,False,False,False,False,False,False
+P233_L_DM_CC,233,L,CC,DM,60,_,3$2,3,Malignant,Postoperative scar and assymetrical increased density$Benign macrocalcifications,True,3,"circle,polygon",6.919518920504547,3,False,,roi,False,False,False,True,False,False
+P233_L_DM_MLO,233,L,MLO,DM,60,_,3$2,3,Malignant,Postoperative scar and assymetrical increased density$Benign macrocalcifications,True,3,"circle,polygon",6.693184078188481,3,False,,roi,False,False,False,True,False,False
+P234_L_DM_CC,234,L,CC,DM,73,C,2,2,Benign,Vascular calcifications and benign macrocalcification,True,12,"circle,ellipse,polygon",2.359898079096553,12,False,,roi,False,False,False,True,False,False
+P235_R_DM_CC,235,R,CC,DM,53,C,3,3,Benign,Equal density mass with circumscribed margin,True,2,"ellipse,polygon",34.73645408897854,2,False,,roi,False,False,False,False,False,False
+P235_R_DM_MLO,235,R,MLO,DM,53,C,3,3,Benign,Equal density mass with circumscribed margin,True,2,"ellipse,polygon",38.2753222548391,2,False,,roi,False,False,False,False,False,False
+P235_L_DM_CC,235,L,CC,DM,53,C,2,2,Benign,IMLN,True,2,"ellipse,polygon",42.26431994573095,2,False,,roi,False,False,False,False,False,False
+P235_L_DM_MLO,235,L,MLO,DM,53,C,2,2,Benign,IMLN,True,2,"circle,polygon",37.3140835001926,2,True,,roi,False,False,False,False,False,False
+P236_L_DM_CC,236,L,CC,DM,50,_,2,2,Benign,Edema and postoperative scar,True,2,polygon,7.095463061995309,2,False,,roi,False,False,False,False,False,False
+P236_L_DM_MLO,236,L,MLO,DM,50,_,2,2,Benign,Edema and postoperative scar,True,3,polygon,6.473914837083451,2,True,,roi,False,False,False,False,False,False
+P237_L_DM_CC,237,L,CC,DM,53,B,2,2,Benign,Dilated retroareolar duct and benign macrocalcification,True,3,"circle,ellipse,polygon",3.2921519276182947,3,False,,roi,False,False,False,True,False,False
+P237_L_DM_MLO,237,L,MLO,DM,53,B,2,2,Benign,Dilated retroareolar duct and benign macrocalcification,True,3,"circle,ellipse,polygon",2.252493072228849,3,False,,roi,False,False,False,True,False,False
+P238_R_DM_CC,238,R,CC,DM,38,C,3,3,Benign,Equal density mass with obscured margin,True,1,circle,1.3547475108881684,1,True,,roi,False,False,False,False,False,False
+P238_R_DM_MLO,238,R,MLO,DM,38,C,3,3,Benign,Equal density mass with obscured margin,True,1,circle,1.161950208530563,1,True,,roi,False,False,False,False,False,False
+P238_L_DM_CC,238,L,CC,DM,38,C,1,1,Benign,Normal,True,1,polygon,24.8778530526372,1,False,,roi,False,False,True,False,False,False
+P238_L_DM_MLO,238,L,MLO,DM,38,C,1,1,Benign,Normal,True,1,polygon,24.9195356459006,1,False,,roi,False,False,True,False,False,False
+P239_R_DM_CC,239,R,CC,DM,58,B,5,5,Malignant,Diffuse edematous changes and high density mass with speculated margin,True,4,polygon,16.92341209224089,3,False,,roi,False,False,False,False,False,False
+P239_R_DM_MLO,239,R,MLO,DM,58,B,5,5,Malignant,Diffuse edematous changes and high density mass with speculated margin,True,4,polygon,12.607243648213547,2,False,,roi,False,False,False,False,False,False
+P241_R_DM_CC,241,R,CC,DM,50,C,3,3,Benign,Equal density mass with circumscribed margin,True,1,polygon,0.2226213726021278,1,False,,roi,False,False,False,False,True,False
+P241_L_DM_CC,241,L,CC,DM,50,_,2,2,Benign,Edema and postoperative scar$Benign macrocalcifications,True,3,"ellipse,polygon",5.419511817125145,3,False,,roi,False,False,False,True,False,False
+P242_R_DM_MLO,242,R,MLO,DM,51,_,4,4,Malignant,Postoperative scar and high density mass with speculated margin,True,3,polygon,4.347950832410823,3,False,,roi,False,False,False,False,False,False
+P243_R_DM_CC,243,R,CC,DM,55,C,3,3,Malignant,Asymmetrical increased density,True,3,polygon,4.081399539633802,3,False,,roi,False,False,False,False,False,False
+P243_R_DM_MLO,243,R,MLO,DM,55,C,3,3,Malignant,Asymmetrical increased density,True,2,polygon,4.781368524394764,1,False,,roi,False,False,False,False,False,False
+P244_L_DM_CC,244,L,CC,DM,39,C,2,2,Benign,Benign macrocalcification,True,2,"circle,ellipse",0.0555543368163219,2,False,,roi,False,False,False,True,True,False
+P244_L_DM_MLO,244,L,MLO,DM,39,C,2,2,Benign,Benign macrocalcification,True,1,ellipse,0.0405244856563315,1,False,,roi,False,False,False,True,True,False
+P245_R_DM_CC,245,R,CC,DM,66,C,2,2,Benign,Benign macrocalcification,True,3,ellipse,0.0472655998971788,3,False,,roi,False,False,False,True,True,False
+P245_L_DM_CC,245,L,CC,DM,66,C,5,5,Malignant,Multiple high density masses with indistinct margin and edema pattern,True,11,polygon,17.013656446646138,11,False,,roi,False,False,False,False,False,False
+P246_R_DM_MLO,246,R,MLO,DM,55,B,5,5,Malignant,Two high density masses with speculated margin and nipple retraction,True,2,polygon,6.036526604948862,2,False,,roi,False,False,False,False,False,False
+P247_L_DM_MLO,247,L,MLO,DM,64,C,5,5,Malignant,High density mass with speculated margin,True,2,polygon,1.92377868470834,2,False,,roi,False,False,False,False,False,False
+P248_L_DM_CC,248,L,CC,DM,49,B,3,3,Benign,Equal density mass with obscured margin,True,1,polygon,0.5325595026181379,1,False,,roi,False,False,False,False,True,False
+P248_L_DM_MLO,248,L,MLO,DM,49,B,3,3,Benign,Equal density mass with obscured margin,True,1,polygon,0.5267885513293354,1,False,,roi,False,False,False,False,True,False
+P249_R_DM_CC,249,R,CC,DM,41,B,5,5,Malignant,Two high density masses with speculated margin and architectural distortion with overlying microcalcifications,True,5,polygon,6.981825278305729,4,False,,roi,False,False,False,False,False,False
+P249_R_DM_MLO,249,R,MLO,DM,41,B,5,5,Malignant,Two high density masses with speculated margin and architectural distortion with overlying microcalcifications,True,6,polygon,10.370647385662016,6,False,,roi,False,False,False,False,False,False
+P251_R_DM_CC,251,R,CC,DM,68,B,4,4,Malignant,Equal density mass with indistinct margin$IMLN,True,2,"ellipse,polygon",0.5420121433701117,2,False,,roi,False,False,False,False,True,False
+P251_R_DM_MLO,251,R,MLO,DM,68,B,4,4,Malignant,Equal density mass with indistinct margin$IMLN,True,3,"ellipse,polygon",0.7332811071941506,3,False,,roi,False,False,False,False,True,False
+P252_R_DM_CC,252,R,CC,DM,44,D,4,4,Malignant,Diffuse edematous changes,True,2,polygon,25.117879649300228,2,False,,roi,False,False,False,False,False,False
+P252_R_DM_MLO,252,R,MLO,DM,44,D,4,4,Malignant,Diffuse edematous changes,True,2,polygon,25.01562741350015,2,False,,roi,False,False,False,False,False,False
+P253_R_DM_CC,253,R,CC,DM,46,B,5,5,Malignant,High density mass with speculated margin and edema pattern with clusters of pleomorphic microcalcification,True,4,polygon,13.881886398921072,2,False,,roi,False,False,False,False,False,False
+P253_R_DM_MLO,253,R,MLO,DM,46,B,5,5,Malignant,High density mass with speculated margin and edema pattern with clusters of pleomorphic microcalcification,True,4,polygon,13.439755105174267,2,False,,roi,False,False,False,False,False,False
+P254_R_DM_CC,254,R,CC,DM,50,C,3,3,Malignant,Focal asymmetrical increased density,True,1,polygon,0.9127492629787962,1,False,,roi,False,False,False,False,True,False
+P254_R_DM_MLO,254,R,MLO,DM,50,C,3,3,Malignant,Focal asymmetrical increased density,True,1,polygon,1.1212509572680047,1,False,,roi,False,False,False,False,False,False
+P254_L_DM_MLO,254,L,MLO,DM,50,_,2,2,Benign,Benign macrocalcification,True,4,circle,0.2708934982096318,4,False,,roi,False,False,False,True,True,False
+P255_R_DM_CC,255,R,CC,DM,53,B,2$2,2,Benign,Dilated retroareolar duct$Vascular calcifications,True,4,polygon,7.097623441853691,3,False,,roi,False,False,False,True,False,False
+P255_R_DM_MLO,255,R,MLO,DM,53,B,2$2,2,Benign,Dilated retroareolar duct$Vascular calcifications,True,3,polygon,5.214004242798744,3,False,,roi,False,False,False,True,False,False
+P255_L_DM_CC,255,L,CC,DM,53,B,4$2,4,Malignant,High density mass with microlobulated margin$Vascular calcifications,True,2,polygon,2.1601714185025416,2,False,,roi,False,False,False,False,False,False
+P255_L_DM_MLO,255,L,MLO,DM,53,B,4$2,4,Malignant,High density mass with microlobulated margin$Vascular calcifications,True,2,polygon,9.226610209234597,2,False,,roi,False,False,False,False,False,False
+P256_L_DM_CC,256,L,CC,DM,48,B,4,4,Malignant,Diffuse edematous changes and architectural distortion,True,2,polygon,6.840648374070931,2,False,,roi,False,False,False,False,False,False
+P256_L_DM_MLO,256,L,MLO,DM,48,B,4,4,Malignant,Diffuse edematous changes and architectural distortion,True,2,polygon,5.070082565409669,2,False,,roi,False,False,False,False,False,False
+P257_R_DM_CC,257,R,CC,DM,51,B,5,5,Malignant,High density mass with speculated margin,True,1,polygon,1.0268406796355578,1,False,,roi,False,False,False,False,False,False
+P257_R_DM_MLO,257,R,MLO,DM,51,B,5,5,Malignant,High density mass with speculated margin,True,1,polygon,0.9952471613627032,1,False,,roi,False,False,False,False,True,False
+P258_R_DM_CC,258,R,CC,DM,51,C,5,5,Malignant,Architectural distortion and clusters of pleomorphic microcalcifications,True,1,polygon,12.31743710943759,1,False,,roi,False,False,False,False,False,False
+P258_R_DM_MLO,258,R,MLO,DM,51,C,5,5,Malignant,Architectural distortion and clusters of pleomorphic microcalcifications,True,1,polygon,9.802615153309944,1,False,,roi,False,False,False,False,False,False
+P259_L_DM_CC,259,L,CC,DM,52,C,4,4,Malignant,High density mass with indistinct margin,True,2,polygon,1.492817317066044,1,False,,roi,False,False,False,False,False,False
+P259_L_DM_MLO,259,L,MLO,DM,52,C,4,4,Malignant,High density mass with indistinct margin and cluster of microcalcifications,True,2,polygon,2.288055744930229,1,False,,roi,False,False,False,False,False,False
+P260_R_DM_CC,260,R,CC,DM,66,B,5,5,Malignant,Two high density masses with speculated margin and edema pattern,True,5,polygon,6.6764560521518455,3,False,,roi,False,False,False,False,False,False
+P260_R_DM_MLO,260,R,MLO,DM,66,B,5,5,Malignant,Two high density masses with speculated margin and edema pattern,True,4,polygon,5.683774124110464,3,False,,roi,False,False,False,False,False,False
+P261_L_DM_CC,261,L,CC,DM,52,B,3,3,Malignant,Asymmetrical increased density,True,1,polygon,7.512895509790423,1,False,,roi,False,False,False,False,False,False
+P261_L_DM_MLO,261,L,MLO,DM,52,B,3,3,Malignant,Asymmetrical increased density,True,1,polygon,13.147677685786242,1,False,,roi,False,False,False,False,False,False
+P262_R_DM_CC,262,R,CC,DM,37,C,3,3,Benign,Punctate calcifications,True,1,polygon,21.959512389719578,1,False,,roi,False,False,False,True,False,False
+P262_R_DM_MLO,262,R,MLO,DM,37,C,3,3,Benign,Punctate calcifications,True,1,polygon,13.697917050691244,1,False,,roi,False,False,False,True,False,False
+P262_L_DM_CC,262,L,CC,DM,37,C,4,4,Malignant,Asymmetrical increased density and clusters of microcalcifications,True,2,polygon,21.499034659383963,1,False,,roi,False,False,False,False,False,False
+P262_L_DM_MLO,262,L,MLO,DM,37,C,4,4,Malignant,Equal density mass with indistinct margin and clusters of microcalcifications,True,2,polygon,20.839918782662867,2,False,,roi,False,False,False,False,False,False
+P263_R_DM_CC,263,R,CC,DM,59,C,5,5,Malignant,High density mass with speculated margin and architectural distortion with edema pattern and nipple retraction,True,3,polygon,21.12711622792131,2,False,,roi,False,False,False,False,False,False
+P263_R_DM_MLO,263,R,MLO,DM,59,C,5,5,Malignant,High density mass with speculated margin and architectural distortion with edema pattern and nipple retraction,True,3,polygon,17.475516325510007,1,False,,roi,False,False,False,False,False,False
+P263_L_DM_CC,263,L,CC,DM,59,C,2,2,Benign,Benign macrocalcification,True,2,"circle,polygon",26.73365750186501,1,False,,roi,False,False,False,True,False,False
+P263_L_DM_MLO,263,L,MLO,DM,59,C,2,2,Benign,Benign macrocalcification,True,2,"circle,polygon",28.613211624329143,1,False,,roi,False,False,False,True,False,False
+P264_L_DM_CC,264,L,CC,DM,65,C,5,5,Malignant,High density mass with speculated margin and edema pattern,True,1,polygon,4.848539234658842,1,False,,roi,False,False,False,False,False,False
+P264_L_DM_MLO,264,L,MLO,DM,65,C,5,5,Malignant,High density mass with speculated margin and edema pattern,True,1,polygon,4.818350251935062,1,False,,roi,False,False,False,False,False,False
+P265_R_DM_CC,265,R,CC,DM,39,C,4,4,Malignant,High density mass with microlobulated margin,True,2,polygon,16.14490040188349,2,False,,roi,False,False,False,False,False,False
+P265_R_DM_MLO,265,R,MLO,DM,39,C,3,3,Malignant,Asymmetrical increased density,True,1,polygon,9.008024789448593,1,False,,roi,False,False,False,False,False,False
+P265_L_DM_CC,265,L,CC,DM,39,C,4,4,Malignant,Diffuse edematous changes,True,2,polygon,29.253426431689743,1,False,,roi,False,False,False,False,False,False
+P265_L_DM_MLO,265,L,MLO,DM,39,C,4,4,Malignant,Diffuse edematous changes,True,2,polygon,21.98343577634941,2,False,,roi,False,False,False,False,False,False
+P266_R_DM_CC,266,R,CC,DM,60,C,5,5,Malignant,High density mass with speculated margin,True,1,polygon,3.6055734875518817,1,False,,roi,False,False,False,False,False,False
+P266_R_DM_MLO,266,R,MLO,DM,60,C,5,5,Malignant,High density mass with speculated margin,True,1,polygon,3.894500690143021,1,False,,roi,False,False,False,False,False,False
+P267_L_DM_CC,267,L,CC,DM,46,B,4,4,Malignant,Architectural distortion with edema pattern and nipple retraction,True,4,polygon,11.648215504276562,2,False,,roi,False,False,False,False,False,False
+P267_L_DM_MLO,267,L,MLO,DM,46,B,4,4,Malignant,Architectural distortion with edema pattern and nipple retraction,True,4,polygon,8.297344099921562,3,False,,roi,False,False,False,False,False,False
+P268_L_DM_CC,268,L,CC,DM,35,C,4,4,Malignant,Architectural distortion,True,1,polygon,2.103064640505976,1,False,,roi,False,False,False,False,False,False
+P268_L_DM_MLO,268,L,MLO,DM,35,C,4,4,Malignant,Architectural distortion,True,1,polygon,1.8567287784679087,1,False,,roi,False,False,False,False,False,False
+P269_L_DM_CC,269,L,CC,DM,60,C,4$2,4,Malignant,High density mass with indistinct margin$Benign macrocalcification,True,3,"circle,polygon",8.677072286044499,3,False,,roi,False,False,False,False,False,False
+P269_L_DM_MLO,269,L,MLO,DM,60,C,4$2,4,Malignant,High density mass with indistinct margin$Benign macrocalcification,True,3,"circle,polygon",5.686722874962145,3,False,,roi,False,False,False,False,False,False
+P270_R_DM_CC,270,R,CC,DM,35,C,3,3,Benign,Asymmetrical increased density with overlying punctate microcalcifications,True,1,polygon,12.74292908431694,1,False,,roi,False,False,False,False,False,False
+P270_R_DM_MLO,270,R,MLO,DM,35,C,3,3,Benign,Asymmetrical increased density with overlying punctate microcalcifications,True,1,polygon,13.045854963032877,1,False,,roi,False,False,False,False,False,False
+P271_R_DM_CC,271,R,CC,DM,61,B,3,3,Benign,Equal density mass with circumscribed margin,True,1,ellipse,0.1494226549351285,1,False,,roi,False,False,False,False,True,False
+P271_R_DM_MLO,271,R,MLO,DM,61,B,3,3,Benign,Equal density mass with circumscribed margin,True,1,ellipse,0.1217536779314198,1,False,,roi,False,False,False,False,True,False
+P271_L_DM_CC,271,L,CC,DM,61,B,5,5,Malignant,Three high density masses with speculated margin and intraductal extension and nipple retraction,True,3,polygon,2.624047886052168,2,False,,roi,False,False,False,False,False,False
+P271_L_DM_MLO,271,L,MLO,DM,61,B,5,5,Malignant,Three high density masses with speculated margin and intraductal extension and nipple retraction,True,3,polygon,2.077393807932365,2,False,,roi,False,False,False,False,False,False
+P272_L_DM_CC,272,L,CC,DM,51,C,5,5,Malignant,Architectural distortion with overlying microcalcifications,True,1,polygon,12.122915831292888,1,False,,roi,False,False,False,False,False,False
+P272_L_DM_MLO,272,L,MLO,DM,51,C,5,5,Malignant,Architectural distortion with overlying microcalcifications,True,1,polygon,11.666573883352818,1,False,,roi,False,False,False,False,False,False
+P273_R_DM_CC,273,R,CC,DM,57,C,2,2,Benign,Benign macrocalcification,True,1,circle,0.0906898292311848,1,False,,roi,False,False,False,True,True,False
+P273_R_DM_MLO,273,R,MLO,DM,57,C,2,2,Benign,Benign macrocalcification,True,1,circle,0.0522018147446103,1,False,,roi,False,False,False,True,True,False
+P273_L_DM_CC,273,L,CC,DM,57,C,5,5,Malignant,High density mass with speculated margin,True,1,polygon,6.443708478989986,1,False,,roi,False,False,False,False,False,False
+P273_L_DM_MLO,273,L,MLO,DM,57,C,5,5,Malignant,High density mass with speculated margin,True,1,polygon,5.399422149051314,1,False,,roi,False,False,False,False,False,False
+P274_R_DM_CC,274,R,CC,DM,59,B,2,2,Benign,Dilated retroareolar duct,True,1,polygon,7.634605578129213,1,False,,roi,False,False,False,False,False,False
+P274_R_DM_MLO,274,R,MLO,DM,59,B,2,2,Benign,Dilated retroareolar duct,True,1,polygon,5.042524087070299,1,False,,roi,False,False,False,False,False,False
+P274_L_DM_CC,274,L,CC,DM,59,B,5$2,5,Malignant,High density mass with speculated margin$Benign macrocalcification,True,6,"ellipse,polygon",1.5686544466466694,6,False,,roi,False,False,False,False,False,False
+P274_L_DM_MLO,274,L,MLO,DM,59,B,5$2,5,Malignant,High density mass with speculated margin$Benign macrocalcification,True,4,"circle,ellipse,polygon",1.508853778306228,4,False,,roi,False,False,False,False,False,False
+P275_L_DM_CC,275,L,CC,DM,51,C,5,5,Malignant,Two high density masses with speculated margin and skin retraction and edema pattern,True,4,polygon,7.476105552658119,2,False,,roi,False,False,False,False,False,False
+P275_L_DM_MLO,275,L,MLO,DM,51,C,5,5,Malignant,Two high density masses with speculated margin and skin retraction and edema pattern,True,4,polygon,6.323930655181336,2,False,,roi,False,False,False,False,False,False
+P276_L_DM_CC,276,L,CC,DM,41,B,5,5,Malignant,High density mass with speculated margin,True,1,polygon,6.170207925349182,1,False,,roi,False,False,False,False,False,False
+P276_L_DM_MLO,276,L,MLO,DM,41,B,5,5,Malignant,High density mass with speculated margin,True,1,polygon,4.814558473947656,1,False,,roi,False,False,False,False,False,False
+P277_L_DM_CC,277,L,CC,DM,58,C,4,4,Malignant,Diffuse edematous changes with asymmetrical increased density and overlying clusters of pleomorphic microcalcifications,True,2,polygon,12.411146636454122,2,False,,roi,False,False,False,False,False,False
+P277_L_DM_MLO,277,L,MLO,DM,58,C,4,4,Malignant,Diffuse edematous changes with asymmetrical increased density and overlying clusters of pleomorphic microcalcifications,True,4,polygon,11.147602821008377,4,False,,roi,False,False,False,False,False,False
+P278_R_DM_CC,278,R,CC,DM,41,D,1,1,Benign,Normal,True,1,polygon,25.819842338011924,1,False,,roi,False,False,True,False,False,False
+P278_R_DM_MLO,278,R,MLO,DM,41,D,1,1,Benign,Normal,True,1,polygon,32.30078842045078,1,False,,roi,False,False,True,False,False,False
+P278_L_DM_CC,278,L,CC,DM,41,D,4,4,Malignant,Diffuse edematous changes,True,2,polygon,9.42074818417755,2,False,,roi,False,False,False,False,False,False
+P278_L_DM_MLO,278,L,MLO,DM,41,D,4,4,Malignant,Diffuse edematous changes,True,4,polygon,12.832572832572833,4,False,,roi,False,False,False,False,False,False
+P279_R_DM_CC,279,R,CC,DM,52,C,4,4,Malignant,Multiple high density masses with circumscribed margin and contour bulge with overlying microcalcifications and edema pattern,True,7,"circle,ellipse,polygon",64.37010959949835,1,False,,roi,False,False,False,False,False,False
+P279_R_DM_MLO,279,R,MLO,DM,52,C,4,4,Malignant,Multiple high density masses with circumscribed margin and contour bulge and edema pattern,True,6,"circle,polygon",45.154835535191815,1,True,,roi,False,False,False,False,False,False
+P280_R_DM_CC,280,R,CC,DM,34,D,2,2,Benign,Benign macrocalcification,True,1,circle,0.1538290905759187,1,False,,roi,False,False,False,True,True,False
+P280_R_DM_MLO,280,R,MLO,DM,34,D,2,2,Benign,Benign macrocalcification,True,1,circle,0.1033962631374075,1,False,,roi,False,False,False,True,True,False
+P280_L_DM_CC,280,L,CC,DM,34,D,5,5,Malignant,Architectural distortion with overlying microcalcifications and nipple retraction,True,5,polygon,14.86399070826956,2,False,,roi,False,False,False,False,False,False
+P280_L_DM_MLO,280,L,MLO,DM,34,D,5,5,Malignant,Multiple high density masses with indistinct margin and overlying microcalcifications and nipple retraction,True,8,polygon,32.55839838643409,5,False,,roi,False,False,False,False,False,False
+P281_R_DM_CC,281,R,CC,DM,66,C,4,4,Malignant,Architectural distortion and equal density mass with indistinct margin,True,2,"ellipse,polygon",6.697920583361733,2,False,,roi,False,False,False,False,False,False
+P281_R_DM_MLO,281,R,MLO,DM,66,C,3,3,Malignant,Asymmetrical increased density,True,1,polygon,7.426351125538118,1,False,,roi,False,False,False,False,False,False
+P283_L_DM_CC,283,L,CC,DM,22,C,4,4,Malignant,Equal density mass with indistinct margin,True,1,polygon,2.0152361263430354,1,False,,roi,False,False,False,False,False,False
+P283_L_DM_MLO,283,L,MLO,DM,22,C,4,4,Malignant,Equal density mass with indistinct margin,True,1,polygon,1.2543660587800078,1,False,,roi,False,False,False,False,False,False
+P284_R_DM_CC,284,R,CC,DM,48,C,2,2,Benign,IMLN,True,1,ellipse,0.27410210109549,1,False,,roi,False,False,False,False,True,False
+P284_R_DM_MLO,284,R,MLO,DM,48,C,2,2,Benign,IMLN,True,1,ellipse,0.282624622741919,1,False,,roi,False,False,False,False,True,False
+P284_L_DM_CC,284,L,CC,DM,48,C,4,4,Benign,Clusters of pleomorphic microcalcification,True,1,polygon,0.5236841405356525,1,False,,roi,False,False,False,False,True,False
+P284_L_DM_MLO,284,L,MLO,DM,48,C,4,4,Benign,Clusters of pleomorphic microcalcification,True,1,polygon,0.2946740848611578,1,False,,roi,False,False,False,False,True,False
+P285_R_DM_CC,285,R,CC,DM,40,C,4,4,Malignant,Diffuse edematous changes and overlying cluster of microcalcifications,True,3,polygon,33.79869199451896,2,False,,roi,False,False,False,False,False,False
+P285_R_DM_MLO,285,R,MLO,DM,40,C,4,4,Malignant,Diffuse edematous changes and overlying cluster of microcalcifications,True,3,polygon,18.128683035714285,2,False,,roi,False,False,False,False,False,False
+P285_L_DM_CC,285,L,CC,DM,40,C,3,3,Benign,Focal asymmetry and two equal density masses with circumscribed margin,True,1,ellipse,1.2052574699539216,1,False,,roi,False,False,False,False,False,False
+P285_L_DM_MLO,285,L,MLO,DM,40,C,3,3,Benign,Focal asymmetry and two equal density mass with obscured margin,True,1,polygon,0.9178390237213766,1,False,,roi,False,False,False,False,True,False
+P286_R_DM_CC,286,R,CC,DM,41,C,4,4,Malignant,Diffuse edematous changes,True,2,polygon,9.2025320563423,2,False,,roi,False,False,False,False,False,False
+P286_R_DM_MLO,286,R,MLO,DM,41,C,4,4,Malignant,Diffuse edematous changes,True,2,polygon,12.242305231995951,2,False,,roi,False,False,False,False,False,False
+P287_R_DM_CC,287,R,CC,DM,64,A,2,2,Benign,IMLN,True,2,ellipse,0.2127224627224627,2,False,,roi,False,False,False,False,True,False
+P287_R_DM_MLO,287,R,MLO,DM,64,A,2,2,Benign,IMLN,True,2,ellipse,0.3005890603085553,2,False,,roi,False,False,False,False,True,False
+P287_L_DM_CC,287,L,CC,DM,64,A,4,4,Malignant,High density mass with microlobulated margin$IMLN,True,2,"ellipse,polygon",1.031615115163505,2,False,,roi,False,False,False,False,False,False
+P287_L_DM_MLO,287,L,MLO,DM,64,A,4,4,Malignant,High density mass with microlobulated margin,True,1,polygon,0.872823997393853,1,False,,roi,False,False,False,False,True,False
+P288_L_DM_CC,288,L,CC,DM,57,C,4,4,Malignant,Diffuse edematous changes,True,2,polygon,38.67118871163589,1,False,,roi,False,False,False,False,False,False
+P288_L_DM_MLO,288,L,MLO,DM,57,C,4,4,Malignant,Diffuse edematous changes,True,2,polygon,27.696928359553617,1,False,,roi,False,False,False,False,False,False
+P289_R_DM_CC,289,R,CC,DM,32,C,3,3,Malignant,Asymmetrical increased density,True,4,polygon,1.1400044323313625,4,False,,roi,False,False,False,False,False,False
+P289_R_DM_MLO,289,R,MLO,DM,32,C,3,3,Malignant,Asymmetrical increased density,True,4,polygon,2.2209401685464933,3,False,,roi,False,False,False,False,False,False
+P290_R_DM_CC,290,R,CC,DM,60,C,5,5,Malignant,Diffuse edematous changes with clusters of pleomorphic microcalcifications,True,3,polygon,11.152572487499745,3,False,,roi,False,False,False,False,False,False
+P290_R_DM_MLO,290,R,MLO,DM,60,C,5,5,Malignant,Diffuse edematous changes with clusters of pleomorphic microcalcifications,True,3,polygon,7.423566252466894,2,False,,roi,False,False,False,False,False,False
+P290_L_DM_CC,290,L,CC,DM,60,C,2,2,Benign,Benign macrocalcification,True,2,circle,0.0726665463079978,2,False,,roi,False,False,False,True,True,False
+P290_L_DM_MLO,290,L,MLO,DM,60,C,2,2,Benign,Benign macrocalcification,True,2,circle,0.1104355086312466,2,False,,roi,False,False,False,True,True,False
+P291_R_DM_CC,291,R,CC,DM,43,C,5,5,Malignant,Two high density masses with speculated margin and intraductal extension and nipple retraction,True,4,polygon,3.8411656726597303,4,False,,roi,False,False,False,False,False,False
+P291_R_DM_MLO,291,R,MLO,DM,43,C,5,5,Malignant,Two high density masses with speculated margin and intraductal extension and nipple retraction$IMLN,True,3,"ellipse,polygon",6.9139504758481785,3,False,,roi,False,False,False,False,False,False
+P292_R_DM_CC,292,R,CC,DM,49,C,4$2,4,Malignant,Equal density mass with speculated margin and overlying macrocalcification$Diffuse macrocalcification,True,39,"ellipse,polygon",22.903137053756183,34,True,,roi,False,False,False,False,False,False
+P292_R_DM_MLO,292,R,MLO,DM,49,C,4$2,4,Malignant,Equal density mass with speculated margin and overlying macrocalcification$Diffuse macrocalcification,True,21,"ellipse,polygon",31.122881355932204,17,True,,roi,False,False,False,False,False,False
+P292_L_DM_MLO,292,L,MLO,DM,49,C,2,2,Benign,Benign macrocalcification,True,1,ellipse,0.0729229137389343,1,False,,roi,False,False,False,True,True,False
+P293_R_DM_CC,293,R,CC,DM,43,C,4,4,Benign,High density mass with circumscribed margin,True,1,circle,2.0249479728597626,1,True,,roi,False,False,False,False,False,False
+P293_R_DM_MLO,293,R,MLO,DM,43,C,4,4,Benign,High density mass with circumscribed margin,True,1,circle,2.1910680129040854,1,False,,roi,False,False,False,False,False,False
+P294_R_DM_CC,294,R,CC,DM,62,C,3$2,3,Benign,Equal density mass with obscured margin$Benign macrocalcification,True,2,ellipse,0.6648795829199823,2,False,,roi,False,False,False,False,True,False
+P294_R_DM_MLO,294,R,MLO,DM,62,C,3$2,3,Benign,Equal density mass with obscured margin$Benign macrocalcification,True,2,ellipse,0.6774431807341875,2,False,,roi,False,False,False,False,True,False
+P295_R_DM_CC,295,R,CC,DM,36,C,3,3,Benign,Asymmetrical increased density,True,1,polygon,12.421823859745851,1,False,,roi,False,False,False,False,False,False
+P295_R_DM_MLO,295,R,MLO,DM,36,C,3,3,Benign,Asymmetrical increased density,True,1,polygon,14.795040339424917,1,False,,roi,False,False,False,False,False,False
+P295_L_DM_CC,295,L,CC,DM,36,C,3,3,Benign,Oval equal density mass with circumscribed margin,True,1,ellipse,0.4124802100629416,1,False,,roi,False,False,False,False,True,False
+P295_L_DM_MLO,295,L,MLO,DM,36,C,3,3,Benign,Oval equal density mass with circumscribed margin,True,1,ellipse,0.3679049772981417,1,False,,roi,False,False,False,False,True,False
+P296_R_DM_CC,296,R,CC,DM,65,A,2,2,Benign,Benign macrocalcification,True,1,circle,0.0539219015280135,1,False,,roi,False,False,False,True,True,False
+P296_R_DM_MLO,296,R,MLO,DM,65,A,2,2,Benign,Benign macrocalcification,True,1,ellipse,0.0282278790330055,1,False,,roi,False,False,False,True,True,False
+P296_L_DM_CC,296,L,CC,DM,65,A,5,5,Malignant,High density mass with speculated margin and two equal density masses with indistinct margin,True,5,polygon,1.4508973508818206,5,False,,roi,False,False,False,False,False,False
+P296_L_DM_MLO,296,L,MLO,DM,65,A,5,5,Malignant,High density mass with speculated margin and two equal density masses with indistinct margin,True,4,polygon,1.5132887329258855,4,False,,roi,False,False,False,False,False,False
+P297_R_DM_CC,297,R,CC,DM,49,C,2,2,Benign,Benign macrocalcification,True,12,ellipse,0.3636122601670248,12,False,,roi,False,False,False,True,True,False
+P297_R_DM_MLO,297,R,MLO,DM,49,C,2,2,Benign,Benign macrocalcification,True,7,ellipse,0.1762852253048331,7,False,,roi,False,False,False,True,True,False
+P297_L_DM_CC,297,L,CC,DM,49,C,4,4,Malignant,Diffuse edematous changes and high density mass with microlobulated margin and nipple retraction,True,4,polygon,41.94927947705639,2,False,,roi,False,False,False,False,False,False
+P297_L_DM_MLO,297,L,MLO,DM,49,C,4,4,Malignant,Diffuse edematous changes and high density mass with microlobulated margin and nipple retraction,True,4,polygon,23.05583984325841,2,False,,roi,False,False,False,False,False,False
+P298_L_DM_CC,298,L,CC,DM,46,B,4,4,Malignant,Diffuse edematous changes,True,2,polygon,7.554717365419565,2,False,,roi,False,False,False,False,False,False
+P298_L_DM_MLO,298,L,MLO,DM,46,B,4,4,Malignant,Diffuse edematous changes,True,2,polygon,8.494212899082099,2,False,,roi,False,False,False,False,False,False
+P299_R_DM_CC,299,R,CC,DM,57,B,5,5,Malignant,Architectural distortion with overlying microcalcifications,True,1,polygon,3.3225808142216264,1,False,,roi,False,False,False,False,False,False
+P300_R_DM_CC,300,R,CC,DM,57,_,2,2,Benign,Edema and postoperative scar with surgical clips,True,6,polygon,15.819971870604782,4,False,,roi,False,False,False,False,False,False
+P300_R_DM_MLO,300,R,MLO,DM,57,_,2,2,Benign,Edema and postoperative scar with surgical clips,True,7,polygon,9.612004039428632,4,False,,roi,False,False,False,False,False,False
+P301_R_DM_CC,301,R,CC,DM,55,B,2,2,Benign,Benign macrocalcification,True,2,ellipse,0.1257871178211061,2,False,,roi,False,False,False,True,True,False
+P301_R_DM_MLO,301,R,MLO,DM,55,B,2,2,Benign,Benign macrocalcification,True,2,"ellipse,polygon",0.0873685325403819,2,False,,roi,False,False,False,True,True,False
+P301_L_DM_CC,301,L,CC,DM,55,B,5$2,5,Benign,Three high density masses with speculated margin and surrounding nodules$Benign macrocalcification,True,4,"ellipse,polygon",3.516513859626739,4,False,,roi,False,False,False,False,False,False
+P301_L_DM_MLO,301,L,MLO,DM,55,B,5$2,5,Benign,Three high density masses with speculated margin and surrounding nodules$Benign macrocalcification,True,3,"ellipse,polygon",3.972476678785047,3,False,,roi,False,False,False,False,False,False
+P302_L_DM_CC,302,L,CC,DM,42,B,4,4,Benign,High density mass with circumscribed margin,True,1,polygon,12.78916827852998,1,False,,roi,False,False,False,False,False,False
+P302_L_DM_MLO,302,L,MLO,DM,42,B,4,4,Benign,High density mass with circumscribed margin,True,1,polygon,9.348324550947035,1,False,,roi,False,False,False,False,False,False
+P303_L_DM_CC,303,L,CC,DM,66,C,4,4,Malignant,Two high density masses with speculated margin,True,1,polygon,1.4408351280210576,1,False,,roi,False,False,False,False,False,False
+P303_L_DM_MLO,303,L,MLO,DM,66,C,4,4,Malignant,Two high density masses with speculated margin,True,1,polygon,1.2572264400640802,1,False,,roi,False,False,False,False,False,False
+P304_R_DM_CC,304,R,CC,DM,55,B,5,5,Malignant,High density mass with speculated margin and asymmetrical increased density and edema pattern,True,3,polygon,9.283249191291098,2,False,,roi,False,False,False,False,False,False
+P304_R_DM_MLO,304,R,MLO,DM,55,B,5,5,Malignant,High density mass with speculated margin and asymmetrical increased density and edema pattern,True,2,polygon,6.895856758658329,1,False,,roi,False,False,False,False,False,False
+P305_R_DM_CC,305,R,CC,DM,33,_,5,5,Malignant,Postoperative scar with high density mass with speculated margin and overlying microcalcification and nipple retraction,True,4,polygon,10.098516384570775,2,False,,roi,False,False,False,False,False,False
+P305_R_DM_MLO,305,R,MLO,DM,33,_,5,5,Malignant,Postoperative scar with high density mass with speculated margin and overlying microcalcification and nipple retraction,True,4,polygon,13.94062223658636,2,False,,roi,False,False,False,False,False,False
+P305_L_DM_CC,305,L,CC,DM,33,C,1,1,Benign,Normal,True,1,polygon,0.292349132067258,1,False,,roi,False,False,True,False,True,False
+P305_L_DM_MLO,305,L,MLO,DM,33,C,4,4,Benign,Architectural distortion,True,1,polygon,1.2538400523757964,1,False,,roi,False,False,False,False,False,False
+P306_R_DM_CC,306,R,CC,DM,73,D,4,4,Malignant,Diffuse edematous changes and high density mass with indistinct margin and clusters of pleomorphic microcalcifications,True,7,polygon,39.27824591147142,4,False,,roi,False,False,False,False,False,False
+P306_R_DM_MLO,306,R,MLO,DM,73,D,4,4,Malignant,Diffuse edematous changes and high density mass with indistinct margin and clusters of pleomorphic microcalcifications,True,3,polygon,39.63541356732359,2,False,,roi,False,False,False,False,False,False
+P306_L_DM_CC,306,L,CC,DM,73,D,4,4,Malignant,Diffuse edematous changes and cluster of microcalcifications,True,9,"ellipse,polygon",15.326335379391406,8,False,,roi,False,False,False,False,False,False
+P306_L_DM_MLO,306,L,MLO,DM,73,D,4,4,Malignant,Diffuse edematous changes and cluster of microcalcifications,True,8,"circle,polygon",11.060205336069142,7,False,,roi,False,False,False,False,False,False
+P307_R_DM_CC,307,R,CC,DM,72,C,2,2,Benign,Benign macrocalcification,True,3,ellipse,0.2093100800258669,3,False,,roi,False,False,False,True,True,False
+P307_R_DM_MLO,307,R,MLO,DM,72,C,2,2,Benign,Benign macrocalcification,True,3,ellipse,0.1463845391947101,3,False,,roi,False,False,False,True,True,False
+P307_L_DM_CC,307,L,CC,DM,72,C,5,5,Malignant,Multiple high density masses with speculated margin and edema pattern and nipple retraction,True,6,polygon,24.45827059773505,4,False,,roi,False,False,False,False,False,False
+P307_L_DM_MLO,307,L,MLO,DM,72,C,5,5,Malignant,Multiple high density masses with speculated margin and edema pattern and nipple retraction,True,6,polygon,11.438796804912569,4,False,,roi,False,False,False,False,False,False
+P308_L_DM_CC,308,L,CC,DM,52,_,4,4,Malignant,Postoperative scar and high density mass with microlobulated margin,True,1,polygon,10.190212690158226,1,False,,roi,False,False,False,False,False,False
+P308_L_DM_MLO,308,L,MLO,DM,52,_,4,4,Malignant,Postoperative scar and high density mass with microlobulated margin,True,1,polygon,10.56053265027366,1,False,,roi,False,False,False,False,False,False
+P309_R_DM_CC,309,R,CC,DM,37,_,2$3,3,Benign,Edema and postoperative scar$Two equal density masses with partially obscured margin,True,3,"ellipse,polygon",7.644343615983552,3,False,,roi,False,False,False,False,False,False
+P309_R_DM_MLO,309,R,MLO,DM,37,_,2$3,3,Benign,Edema and postoperative scar$Two equal density masses with partially obscured margin,True,3,"ellipse,polygon",7.05002306617278,3,False,,roi,False,False,False,False,False,False
+P309_L_DM_CC,309,L,CC,DM,37,C,3,3,Benign,Asymmetrical increased density,True,1,polygon,20.017069271909463,1,False,,roi,False,False,False,False,False,False
+P309_L_DM_MLO,309,L,MLO,DM,37,C,3,3,Benign,Asymmetrical increased density,True,1,polygon,10.585690339456216,1,False,,roi,False,False,False,False,False,False
+P310_R_DM_CC,310,R,CC,DM,51,C,2,2,Benign,Benign macrocalcification,True,3,circle,0.1512503177756902,3,False,,roi,False,False,False,True,True,False
+P310_R_DM_MLO,310,R,MLO,DM,51,C,2,2,Benign,Benign macrocalcification,True,3,circle,0.2043971488806344,3,False,,roi,False,False,False,True,True,False
+P310_L_DM_CC,310,L,CC,DM,51,C,4,4,Malignant,Diffuse edematous changes with focal asymmetrical increased density and scattered microcalcifications,True,9,polygon,16.254638513839765,5,False,,roi,False,False,False,False,False,False
+P310_L_DM_MLO,310,L,MLO,DM,51,C,4,4,Malignant,Diffuse edematous changes,True,7,polygon,12.013362165656812,6,False,,roi,False,False,False,False,False,False
+P311_R_DM_CC,311,R,CC,DM,50,C,5$2,5,Malignant,High density mass with speculated margin and architectural distortion with overlying calcificaton and multiple equal density masses with circumscribed margin and dilated retroareolar ducts$Benign macrocalcification,True,11,"ellipse,polygon",17.320783391976814,7,False,,roi,False,False,False,False,False,False
+P311_R_DM_MLO,311,R,MLO,DM,50,C,5$2,5,Malignant,High density mass with speculated margin and architectural distortion with overlying calcificaton and multiple equal density masses with circumscribed margin and dilated retroareolar ducts$Benign macrocalcification,True,8,"ellipse,polygon",11.415825728685078,5,False,,roi,False,False,False,False,False,False
+P311_L_DM_CC,311,L,CC,DM,50,C,3$2,3,Benign,Multiple equal density masses with circumscribed margin and dilated retroareolar ducts$Benign macrocalcification,True,9,"ellipse,polygon",8.07592356291432,6,False,,roi,False,False,False,False,False,False
+P311_L_DM_MLO,311,L,MLO,DM,50,C,3$2,3,Benign,Multiple equal density masses with circumscribed margin and dilated retroareolar ducts$Benign macrocalcification,True,4,"ellipse,polygon",3.444656530730065,2,False,,roi,False,False,False,False,False,False
+P312_L_DM_CC,312,L,CC,DM,50,C,4,4,Malignant,Equal density mass with indistinct margin,True,1,polygon,1.0991638075400167,1,False,,roi,False,False,False,False,False,False
+P312_L_DM_MLO,312,L,MLO,DM,50,C,4,4,Malignant,Equal density mass with indistinct margin,True,1,polygon,0.8333527665712772,1,False,,roi,False,False,False,False,True,False
+P313_R_DM_CC,313,R,CC,DM,52,C,3$2,3,Malignant,Focal asymmetrical increased density and multiple equal density nodules$Benign macrocalcification,True,6,polygon,6.610800744878957,6,False,,roi,False,False,False,False,False,False
+P313_R_DM_MLO,313,R,MLO,DM,52,C,3$2,3,Malignant,Focal asymmetrical increased density and multiple equal density nodules$Benign macrocalcification,True,4,"ellipse,polygon",9.195198912171822,4,False,,roi,False,False,False,False,False,False
+P313_L_DM_CC,313,L,CC,DM,52,C,5$2,5,Malignant,High density irregular mass with speculated margin and multiple equal density nodules$Benign macrocalcification,True,7,"circle,ellipse,polygon",6.88803282230838,7,False,,roi,False,False,False,False,False,False
+P313_L_DM_MLO,313,L,MLO,DM,52,C,5$2,5,Malignant,High density irregular mass with speculated margin and multiple equal density nodules$Benign macrocalcification,True,4,"circle,ellipse,polygon",7.772219661022031,4,False,,roi,False,False,False,False,False,False
+P314_L_DM_CC,314,L,CC,DM,60,B,4,4,Malignant,Diffuse edematous changes and high density mass with microlobulated margin and equal density mass with circumscribed margin,True,3,polygon,11.286138068594648,3,False,,roi,False,False,False,False,False,False
+P314_L_DM_MLO,314,L,MLO,DM,60,B,4,4,Malignant,Diffuse edematous changes and high density mass with microlobulated margin and equal density mass with circumscribed margin,True,3,polygon,8.397543088282804,3,False,,roi,False,False,False,False,False,False
+P315_R_DM_CC,315,R,CC,DM,65,B,2,2,Benign,Vascular calcifications,True,1,polygon,1.1169105576341738,1,False,,roi,False,False,False,True,False,False
+P315_R_DM_MLO,315,R,MLO,DM,65,B,2,2,Benign,Vascular calcifications,True,1,polygon,1.193769730794151,1,False,,roi,False,False,False,True,False,False
+P315_L_DM_CC,315,L,CC,DM,65,B,4,4,Malignant,High density mass with indistinct margin and two equal density nodules,True,3,"ellipse,polygon",3.38550679929173,3,False,,roi,False,False,False,False,False,False
+P315_L_DM_MLO,315,L,MLO,DM,65,B,4,4,Malignant,High density mass with indistinct margin and two equal density nodules,True,2,"ellipse,polygon",3.780429461706546,2,False,,roi,False,False,False,False,False,False
+P316_R_DM_CC,316,R,CC,DM,68,B,4$2,4,Benign,Diffuse edematous changes$Benign macrocalcification,True,2,polygon,15.172973328077784,2,False,,roi,False,False,False,True,False,False
+P316_R_DM_MLO,316,R,MLO,DM,68,B,4$2,4,Benign,Diffuse edematous changes$Benign macrocalcification,True,2,polygon,12.605892830732232,2,False,,roi,False,False,False,True,False,False
+P316_L_DM_CC,316,L,CC,DM,68,B,5$2,5,Malignant,Diffuse edematous changes and high density mass lesion with speculated margin and overlying calcification$Benign macrocalcification,True,4,"circle,polygon",13.488333204702736,3,False,,roi,False,False,False,False,False,False
+P316_L_DM_MLO,316,L,MLO,DM,68,B,5$2,5,Malignant,Diffuse edematous changes and high density mass lesion with speculated margin and overlying calcification$Benign macrocalcification,True,4,"circle,polygon",8.877803552620527,4,False,,roi,False,False,False,False,False,False
+P317_R_DM_CC,317,R,CC,DM,31,D,1,1,Benign,Normal,True,1,polygon,49.74792351029975,1,False,,roi,False,False,True,False,False,False
+P317_R_DM_MLO,317,R,MLO,DM,31,D,1,1,Benign,Normal,True,1,polygon,30.57499651022092,1,False,,roi,False,False,True,False,False,False
+P317_L_DM_CC,317,L,CC,DM,31,_,4,4,Malignant,Postoperative scar and high density mass with indistinct margin,True,2,polygon,51.704454273735735,2,False,,roi,False,False,False,False,False,False
+P317_L_DM_MLO,317,L,MLO,DM,31,_,4,4,Malignant,Postoperative scar and high density mass with indistinct margin,True,2,polygon,41.00666557462038,2,False,,roi,False,False,False,False,False,False
+P318_R_DM_CC,318,R,CC,DM,60,C,5,5,Malignant,Diffuse edematous changes with clusters of pleomorphic microcalcifications,True,3,polygon,9.212827681723605,2,False,,roi,False,False,False,False,False,False
+P318_R_DM_MLO,318,R,MLO,DM,60,C,5,5,Malignant,Diffuse edematous changes with clusters of pleomorphic microcalcifications,True,3,polygon,6.465335984780821,3,False,,roi,False,False,False,False,False,False
+P318_L_DM_CC,318,L,CC,DM,60,C,2,2,Benign,Vascular calcification,True,1,polygon,0.6729893299420047,1,False,,roi,False,False,False,True,True,False
+P318_L_DM_MLO,318,L,MLO,DM,60,C,2,2,Benign,Vascular calcification,True,1,polygon,1.2869015063834135,1,False,,roi,False,False,False,True,False,False
+P319_R_DM_CC,319,R,CC,DM,46,B,3$2,3,Benign,Equal density mass with obscured margin$Benign macrocalcification,True,4,"circle,ellipse",1.162464872651349,4,False,,roi,False,False,False,False,False,False
+P319_R_DM_MLO,319,R,MLO,DM,46,B,3$2,3,Benign,Equal density mass with obscured margin$Benign macrocalcification,True,3,"circle,ellipse",1.0122129968448528,2,False,,roi,False,False,False,False,False,False
+P319_L_DM_CC,319,L,CC,DM,46,B,2,2,Benign,Circumscribed mixed iso and low density mass,True,4,"ellipse,polygon",11.449430543767734,2,False,,roi,False,False,False,False,False,False
+P319_L_DM_MLO,319,L,MLO,DM,46,B,2,2,Benign,Circumscribed mixed iso and low density mass,True,4,"ellipse,polygon",11.58103529470202,2,False,,roi,False,False,False,False,False,False
+P320_L_DM_CC,320,L,CC,DM,45,_,2,2,Malignant,Edema and postoperative scar with surgical clips,True,3,polygon,4.494190471788961,2,True,,roi,False,False,False,False,False,False
+P320_L_DM_MLO,320,L,MLO,DM,45,_,2,2,Malignant,Edema and postoperative scar with surgical clips,True,4,polygon,5.440824056895485,3,False,,roi,False,False,False,False,False,False
+P321_R_DM_CC,321,R,CC,DM,48,_,4,4,Malignant,Postoperative scar and surgical clip with architectural distorton and nodular increased density with overlying clusters of pleomorphic microcalcification,True,7,polygon,18.33649664700009,1,False,,roi,False,False,False,False,False,False
+P321_R_DM_MLO,321,R,MLO,DM,48,_,4,4,Malignant,Postoperative scar and surgical clip with architectural distorton and nodular increased density with overlying clusters of pleomorphic microcalcification,True,5,polygon,11.88764899507666,2,False,,roi,False,False,False,False,False,False
+P322_L_DM_CC,322,L,CC,DM,76,B,4,4,Malignant,Architectural distortion and nipple retraction,True,2,polygon,4.771788197304689,2,False,,roi,False,False,False,False,False,False
+P322_L_DM_MLO,322,L,MLO,DM,76,B,4,4,Malignant,Architectural distortion and nipple retraction,True,2,polygon,6.885309240914504,1,False,,roi,False,False,False,False,False,False
+P323_L_DM_CC,323,L,CC,DM,45,C,4,4,Malignant,Equal density mass with indistinct margin$Linear tortous densities,True,4,polygon,6.8515288417863225,4,False,,roi,False,False,False,False,False,False
+P323_L_DM_MLO,323,L,MLO,DM,45,C,4,4,Malignant,Equal density mass with indistinct margin$Linear tortous densities,True,2,polygon,10.587737744007896,2,False,,roi,False,False,False,False,False,False
+P324_R_DM_MLO,324,R,MLO,DM,25,C,3,3,Benign,Diffuse edematous changes with diffuse air/dark density,True,2,polygon,41.61546904311095,2,True,,roi,False,False,False,False,False,False
+P325_R_DM_CC,325,R,CC,DM,49,B,3$2,3,Benign,Nodular asymmetrical increased density$IMLN,True,2,"ellipse,polygon",0.46957459706176,2,False,,roi,False,False,False,False,True,False
+P325_R_DM_MLO,325,R,MLO,DM,49,B,3$2,3,Benign,Nodular asymmetrical increased density$IMLN,True,2,"ellipse,polygon",0.510571387730173,2,False,,roi,False,False,False,False,True,False
+P326_R_DM_CC,326,R,CC,DM,51,C,2,2,Benign,Benign macrocalcification,True,1,ellipse,0.0210092925213463,1,False,,roi,False,False,False,True,True,False
+P326_R_DM_MLO,326,R,MLO,DM,51,C,2,2,Benign,Benign macrocalcification,True,1,ellipse,0.0242498356041116,1,False,,roi,False,False,False,True,True,False
+P326_L_DM_CC,326,L,CC,DM,51,C,3,3,Malignant,Asymmetrical increased density,True,1,polygon,22.77504497426635,1,False,,roi,False,False,False,False,False,False
+P326_L_DM_MLO,326,L,MLO,DM,51,C,3,3,Malignant,Asymmetrical increased density,True,1,polygon,15.857541862033989,1,False,,roi,False,False,False,False,False,False
