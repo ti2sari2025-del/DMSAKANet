@@ -1,70 +1,82 @@
 # DMSA-KANet
 
-**Improving Breast Cancer Segmentation in Mammography through Deep Supervision Multi-Scale Attention and Kolmogorov-Arnold Networks**
+Code, data-preparation scripts, patient-level fold files, and per-fold results for
 
-This repository contains the training code for DMSA-KANet, a hybrid deep learning architecture for breast cancer lesion segmentation in mammography. DMSA-KANet combines a hierarchical CNN encoder (EfficientNetB4) with a dedicated high-resolution path, a multi-scale bottleneck (dilated convolutions + Kolmogorov-Arnold Network layers + Vision Transformer), a KAN-based CBAM attention module, and a decoder with KAN-gated dense skip connections and deep supervision.
+> D. Titisari et al., "DMSA-KANet: Improving Breast Cancer Segmentation in Mammography through Deep
+> Supervision Multi-Scale Attention and Kolmogorov-Arnold Networks", *International Journal of
+> Intelligent Engineering and Systems* (under review, paper ID 20265008).
 
-Manuscript submitted to the *International Journal of Intelligent Engineering and Systems* (IJIES).
+DMSA-KANet combines an EfficientNetB4 encoder, a high-resolution path, a multi-scale bottleneck
+(dilated convolutions, Kolmogorov-Arnold Network layers, and a Vision Transformer), a KAN-based CBAM
+module, and a decoder with KAN-gated dense skip connections and deep supervision.
 
-## Architecture overview
+**Release used for the manuscript:** tag `v2.0-ijies` (see *Code version* below).
 
-```
-Input (256×256×3)
-  └─ HR-Encoder (256×256, no downsampling)
-  └─ Encoder ×2 → ×4 → ×8 → ×16 → ×32 (EfficientNetB4 backbone, feature projection to 64/128/256/512/512 ch)
-       └─ MSFE Bottleneck (dilated convs, rates 1/3/6/12) → 1024ch
-       └─ ViT Bottleneck (4 blocks, 8 heads, CLS token, learnable positional embeddings) → 1024ch
-       └─ KAN-CBAM (KAN-based channel attention + spatial attention)
-  └─ Decoder ×16 → ×8 → ×4 → ×2 → HR-Decoder
-       (KAN-gated dense skip connections at each level; 4-scale deep supervision output)
-```
+## Repository layout
 
-- **Loss:** Focal Tversky (0.4) + Lovász hinge (0.3) + Focal (0.2) + Dice (0.1)
-- **Training:** two-phase (Phase 1: frozen backbone, LR = 1e-3; Phase 2: partial backbone unfreeze, LR = 5e-5)
-- **Evaluation:** 5-fold cross-validation
+| Folder | Contents |
+|---|---|
+| `preprocessing/` | Mask generation, resizing, inclusion rules, and patient-level split scripts for CDD-CESM and CBIS-DDSM |
+| `splits/` | Fold files listing the role (train / val / test) of every image in every outer fold, for both datasets |
+| `training/` | Training and evaluation scripts for DMSA-KANet and the six baselines, the complexity script, the nested learning-rate selection, and all per-fold results (`training/results/`) |
+| `legacy/` | The earlier image-level training script of the first submission. **Not used for any result in the current manuscript** |
 
-## Datasets
+## Settings used in the manuscript
 
-The model was evaluated on two public mammography datasets:
+| Setting | Value |
+|---|---|
+| Evaluation | Patient-level 5-fold cross-validation (`StratifiedGroupKFold`, seed 42); ~15% of the training patients of each outer fold form the validation set (`GroupShuffleSplit`, seed 42 + fold) |
+| Model selection | Checkpoint with the highest validation Dice; LR halved after 5 epochs without improvement; threshold chosen on the validation set from 0.01–0.90 by pooled IoU; test fold used once |
+| DMSA-KANet schedule | Phase 1: frozen encoder, **LR1 = 1e-3**, 20 epochs. Phase 2: blocks 4–7 unfrozen, **LR2 = 1e-5** (Trial 8 of the search in Table 5) |
+| Batch size / epochs | 8 / 50 (CDD-CESM, 6× augmentation), 30 (CBIS-DDSM, 3× augmentation) |
+| Loss | Focal Tversky 0.4 + Lovász 0.3 + Focal 0.2 + Dice 0.1; deep-supervision weights 0.5 / 0.2 / 0.2 / 0.1 |
+| Metrics | TP, FP, FN, TN pooled over all pixels of a test fold; Dice, IoU, precision, recall, FPR, FNR, ROC-AUC from the pooled counts (F1 equals Dice); per-image Dice in addition; mean ± SD over five folds |
+| Complexity | 120.50 M parameters (103.56 M trainable in Phase 1); **56.70 GFLOPs** (see below) |
 
-- **CDD-CESM** — Categorized Digital Database for Low Energy and Subtracted Contrast Enhanced Spectral Mammography Images, available via [The Cancer Imaging Archive (TCIA)](https://www.cancerimagingarchive.net/).
-- **CBIS-DDSM** — Curated Breast Imaging Subset of the Digital Database for Screening Mammography (mass subset used here).
+The full protocol, the baseline configurations, and the commands are in `training/README.md`.
 
-Dataset files are not included in this repository. Update `image_directory` and `mask_directory` at the top of `train_dmsa_kanet.py` to point to your local copies before running.
+## Which file produced which table
 
-## Requirements
+| Manuscript | Produced by | Stored output |
+|---|---|---|
+| Table 2 (dataset composition) | `preprocessing/*` | `splits/*.csv` |
+| Tables 6–7 (patient-level results) | `training/train_dmsa_kanet_patientlevel.py`, `training/train_baseline_patientlevel.py` (default settings), collected by `training/collect_results.py` | `training/results/all_fold_results.csv`, `all_summary.csv` |
+| Nested learning-rate selection (Section 5.1) | `training/run_nested_cbis.sh`, `training/select_nested.py` | `training/results/nested_selection_cbisddsm.csv` |
+| Table 9 (complexity) | `training/compute_complexity.py` | printed output, reproduced in `training/README.md` |
+| Tables 5 and 8 (search and ablation) | earlier image-level experiments (single 80/20 split of CBIS-DDSM, seed 789); not protocol-matched and not reproduced by these scripts | values in the manuscript |
 
-See `requirements.txt`. Tested with Python 3.10 and TensorFlow 2.x on an NVIDIA GPU (RTX A6000 / RTX 2080).
+## FLOPs convention
 
-```bash
-pip install -r requirements.txt
-```
+56.70 GFLOPs is the number of floating-point operations of one forward pass (batch size 1,
+256 × 256 × 3 input, all four outputs) counted by the TensorFlow 2.15 profiler
+(`tf.compat.v1.profiler`, `float_operation()` option) on the traced inference graph, in which one
+multiply–accumulate counts as two operations. The profiler counts only operations that have a
+registered FLOP rule. Run `CUDA_VISIBLE_DEVICES="" python training/compute_complexity.py` to
+reproduce it. An earlier version of this README quoted "~53.1 GFLOPs"; that was a hand estimate and
+is superseded by the profiler value. The `estimate_flops()` helper inside the training scripts walks
+only the top-level Keras layers and undercounts; it is not used for Table 9.
 
-## Usage
+## Code version
 
-```bash
-python train_dmsa_kanet.py
-```
+The tag `v2.0-ijies` marks the code of the revised manuscript. Relative to the scripts that produced
+Tables 6 and 7, the only change in `train_dmsa_kanet_patientlevel.py` is an optional learning-rate
+override (`LR1`, `LR2`, `RUN_TAG` environment variables) and two extra fields in the result files
+(configuration and best validation Dice); with the variables unset, the script is identical in
+behaviour. Earlier versions of this README described the first-submission settings
+(LR2 = 5e-5, image-level folds); those settings are not used in the current manuscript.
 
-The script performs 5-fold cross-validation with per-fold checkpointing (safe to interrupt and resume — completed folds are automatically skipped on the next run). Outputs:
+## Environment
 
-- `checkpoints_v11/fold_N_result.json` — per-fold metrics
-- `checkpoints_v11/fold_N_history.json` — per-fold training history
-- `amedde_v9_fold_N_best_dice.keras` — best model weights per fold
-- `amedde_v11_kfold_results.csv`, `amedde_v11_kfold_summary.csv` — aggregated results
-- `amedde_v11_complexity.csv` — parameter count (FLOPs estimate from this script covers convolutional layers only; see note below)
+Python 3.11.7, TensorFlow 2.15.0, CUDA 12.2, cuDNN 8, scikit-learn 1.3.0, keras-unet-collection 0.1.13,
+one NVIDIA RTX A6000 (48 GB). Exact versions of the packages used by the scripts: `requirements.txt`;
+full list of the installed packages (`pip freeze`): `requirements_full_paperspace.txt`.
 
-## Notes on this release
+## Data
 
-- This is the corrected version of the training script. An earlier internal version contained an algebra error in the F1-score formula (it computed `2·Precision·Recall` instead of `2·Precision·Recall / (Precision + Recall)`); for binary segmentation these two quantities are mathematically required to be identical to Dice, so the corrected formula is used throughout. See the `calculate_metrics()` function docstring for detail.
-- The built-in `estimate_flops()` utility only walks the model's top-level Keras layers and does not recurse into the custom `ViTBottleneck` / `KANLayer` layers, so its FLOPs estimate undercounts the true computational cost. The manuscript reports a corrected estimate (~53.1 GFLOPs) that includes the Vision Transformer and KAN spline computations.
-
-## Citation
-
-If you use this code, please cite:
-
-> [Author list], "DMSA-KANet: Improving Breast Cancer Segmentation in Mammography through Deep Supervision Multi-Scale Attention and Kolmogorov-Arnold Networks," *International Journal of Intelligent Engineering and Systems*, in press.
+CDD-CESM and CBIS-DDSM are available from The Cancer Imaging Archive and are not redistributed here.
+Patient identifiers in the fold files are the anonymized indices of each dataset. Trained checkpoints
+are available from the corresponding author on request.
 
 ## License
 
-See `LICENSE`.
+MIT (see `LICENSE`).
