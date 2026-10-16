@@ -16,6 +16,10 @@ version used in the original submission. Changes in this version (revision 2):
   6. Epoch-level resume after machine shutdowns (weights + training state saved every epoch).
   7. Fixed random seeds; per-image metrics and test-set probability maps are saved
      so that every reported number can be recomputed.
+  8. (revision 4) Optional learning-rate override for nested selection inside the
+     training patients:  LR1=1e-4 LR2=5e-5 RUN_TAG=lr1_1e-4_lr2_5e-5 DATASET=cbisddsm ...
+     Without these variables the script reproduces the runs of Tables 6 and 7.
+     Each fold result also stores the configuration, the best validation Dice and its epoch.
 
 Metrics: pixel-level confusion counts pooled over all test images of a fold
 ("pooled"), plus the mean of per-image Dice/IoU ("per-image"). Reported values are
@@ -51,7 +55,8 @@ DATASETS  = {
 }
 DATA_DIR  = DATASETS[DATASET][0]                                    # images/ and masks/ inside
 FOLD_CSV  = os.path.join(DATA_DIR, DATASETS[DATASET][1])
-OUT_DIR   = os.path.abspath(f'results_patientlevel_{DATASET}')     # metrics, predictions
+RUN_TAG   = os.environ.get('RUN_TAG', '')                           # e.g. nested/lr1_1e-4_lr2_5e-5
+OUT_DIR   = os.path.abspath(os.path.join(f'results_patientlevel_{DATASET}', RUN_TAG))  # metrics, predictions
 os.makedirs(OUT_DIR, exist_ok=True)
 
 SIZE           = 256
@@ -59,8 +64,8 @@ BATCH_SIZE     = 8
 N_SPLITS       = 5
 EPOCHS         = 50 if DATASET == 'cddcesm' else 30   # CBIS-DDSM: 30 epochs (see README)
 AUG_FACTOR     = 6 if DATASET == 'cddcesm' else 3    # training-set augmentation multiplier
-LR_PHASE1      = 1e-3
-LR_PHASE2      = 1e-5    # validated optimum (Trial 8)
+LR_PHASE1      = float(os.environ.get('LR1', '1e-3'))
+LR_PHASE2      = float(os.environ.get('LR2', '1e-5'))    # default: Trial 8
 PHASE1_EPOCHS  = 20
 
 KAN_GRID       = 5
@@ -1031,6 +1036,8 @@ for fold_num in range(1, N_SPLITS + 1):
     combined = {c: hdf[c].astype(float).tolist() for c in hdf.columns if c != 'epoch'}
 
     best_path = f'{CKPT_PREFIX}_fold_{fold_num}_best_dice.keras'
+    best_dice = max(combined['val_dice_coefficient'])
+    best_ep   = int(np.argmax(combined['val_dice_coefficient']) + 1)
     if os.path.exists(best_path):
         print(f"\n  Loading best-validation model: {best_path}")
         best_base = tf.keras.models.load_model(best_path, compile=False)
@@ -1061,6 +1068,8 @@ for fold_num in range(1, N_SPLITS + 1):
         'train_loss': float(combined['loss'][-1]),
         'val_loss':   float(combined['val_loss'][-1]),
         'execution_time': str(elapsed),
+        'lr_phase1': LR_PHASE1, 'lr_phase2': LR_PHASE2, 'batch_size': BATCH_SIZE,
+        'best_val_dice': float(best_dice), 'best_epoch': best_ep,
         **metrics
     }
     fold_results.append(fold_result)

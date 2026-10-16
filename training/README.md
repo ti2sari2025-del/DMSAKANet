@@ -14,6 +14,12 @@ fold files are in `../splits/`.
 | `run_queue_priority.sh` | Runs every remaining model/dataset combination in sequence; safe to restart |
 | `reevaluate_thresholds.py` | Re-selects the threshold on the validation set with the 0.01–0.90 grid from a saved checkpoint (used for the CDD-CESM DMSA-KANet run) |
 | `collect_results.py` | Collects all finished folds and writes `all_fold_results.csv` and `all_summary.csv` |
+| `run_nested_cbis.sh` | Nested learning-rate selection of DMSA-KANet on CBIS-DDSM (three extra configurations, see below) |
+| `select_nested.py` | Chooses the configuration per outer fold on the validation patients and writes `nested_selection_cbisddsm.csv` |
+| `compute_complexity.py` | Parameter count and FLOPs of DMSA-KANet (Table 9) |
+| `collect_per_image.py` | Merges the per-image test metrics of all models into `results/per_image_<dataset>.csv` |
+| `results/per_image_cddcesm.csv`, `results/per_image_cbisddsm.csv` | Dice and IoU of every test image, per model and fold |
+| `results/nested_selection_cbisddsm.csv` | One row per fold × configuration, with the configuration chosen on validation marked |
 | `results/all_fold_results.csv` | One row per dataset × model × fold (all metrics, selected threshold) |
 | `results/all_summary.csv` | Mean ± SD over the five folds (Tables 6 and 7) |
 
@@ -109,6 +115,46 @@ Full metrics are in `results/all_summary.csv` and per fold in `results/all_fold_
 Under this protocol DMSA-KANet does not outperform the baselines. On CBIS-DDSM, U-Net++ collapsed
 to all-lesion predictions in every fold and ViT trained unreliably; both are reported as observed,
 without re-tuning, because every model received the same recipe.
+
+## Nested learning-rate selection (CBIS-DDSM)
+
+The learning rates of DMSA-KANet were originally chosen on an image-level split of CBIS-DDSM whose
+validation images overlap the patient-level test folds. To keep that choice inside the training
+patients, `run_nested_cbis.sh` trains three further configurations on the same folds, inner
+validation patients, seeds, and epochs: LR1 ∈ {1e-3, 1e-4} × LR2 ∈ {5e-6, 1e-5} (batch size 8;
+LR1 = 1e-3 and LR2 = 1e-5 is the run of Table 7). The grid is the 2 × 2 grid spanned by the three
+best trials of the earlier search (Trials 8, 6, and 5, all with batch size 8) and was fixed before
+any of these runs.
+For each outer fold, `select_nested.py` takes the configuration with the highest best-validation
+Dice and reports its test result; the test fold plays no part in the choice.
+
+```
+nohup bash run_nested_cbis.sh > nested_log.txt 2>&1 &   # resumable
+python select_nested.py
+```
+
+## Complexity (Table 9)
+
+```
+CUDA_VISIBLE_DEVICES="" python compute_complexity.py
+```
+
+Output (TensorFlow 2.15.0):
+
+```
+Total parameters      : 120,497,866 (120.50 M)
+Trainable (phase 1)   : 103,555,163 (103.56 M)
+Non-trainable         : 16,942,703 (16.94 M)
+Trainable (phase 2)   : 120,028,017 (120.03 M)
+FLOPs, all four outputs (deep-supervision heads included): 56,700,734,031 (56.70 G)
+FLOPs, main output only                                   : 56,697,042,505 (56.70 G)   # OUTPUTS=main
+```
+
+FLOPs are counted by the TensorFlow profiler (`float_operation()`) on the traced inference graph of
+one forward pass at batch size 1 and 256 × 256 × 3 input; one multiply–accumulate counts as two
+operations, and only operations with a registered FLOP rule are counted. The encoder is built
+without ImageNet weights for this count, which does not change it. The `estimate_flops()` helper in
+the training script covers only top-level Conv2D/Dense layers and is not used for Table 9.
 
 ## Implementation notes
 
