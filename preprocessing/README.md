@@ -1,13 +1,14 @@
-# Data preparation (CDD-CESM)
+# Data preparation (CDD-CESM and CBIS-DDSM)
 
-Scripts that rebuild the CDD-CESM segmentation set and the patient-level folds used in the paper.
-Run them in order.
+Scripts that rebuild both segmentation sets and the patient-level folds used in the paper.
+Run them in order. CBIS-DDSM is prepared by step 4 (see the CBIS-DDSM section at the end).
 
 | Step | File | Where it was run | Output |
 |---|---|---|---|
 | 1 | `01_generate_masks_cddcesm.ipynb` | Google Colab | Binary masks at native resolution from the radiologists' hand-drawn ROIs (`Radiology_hand_drawn_segmentations_v2.csv`), plus `master_table.csv` with labels and quality flags |
 | 2 | `02_resize_cddcesm_256.py` | Google Colab | 650 images and masks resized to 256 × 256, plus `manifest_cddcesm_650.csv` |
 | 3 | `03_patient_level_split_cddcesm.py` | Paperspace | `fold_assignments_cddcesm_650.csv` (patient-level 5-fold split with train/val/test roles) |
+| 4 | `04_prepare_cbisddsm.py` | Paperspace | CBIS-DDSM images and masks at 256 × 256, `manifest_cbisddsm.csv`, and `fold_assignments_cbisddsm.csv` |
 
 ## Source data
 
@@ -48,3 +49,29 @@ Masks are resized with `cv2.INTER_NEAREST` and binarized to {0, 255}. Files are 
   It is used for checkpoint selection, learning-rate scheduling and threshold selection. The test fold is used once, for the final evaluation.
 - The role of every image in every fold is stored explicitly in `splits/fold_assignments_cddcesm_650.csv`
   (columns `role_fold0` … `role_fold4`). Patient IDs are the anonymized dataset indices (`P1` … `P326`).
+
+# CBIS-DDSM (step 4)
+
+## Source data
+
+CBIS-DDSM (Lee et al., *Scientific Data* 4:170177, 2017), distributed by The Cancer Imaging Archive.
+The mass subset was used as an 8-bit PNG export at 512 × 512 pixels prepared with Roboflow
+(file names keep the original CBIS-DDSM prefix, e.g. `Mass-Training_P_00428_LEFT_CC_FULL_PRE_png`).
+
+## Inclusion
+
+Every image with a matching mask whose name parses as `Mass-<split>_P_<id>_<side>_<view>` is kept;
+duplicate prefixes are skipped, and images whose mask becomes empty at 256 × 256 are excluded.
+Result: 1,592 mass images from 892 patients (`splits/manifest_cbisddsm.csv`).
+
+## Resizing
+
+Identical to CDD-CESM: images resized directly to 256 × 256 with `cv2.INTER_AREA`; masks with
+`cv2.INTER_NEAREST`, binarized to {0, 255}.
+
+## Patient-level split
+
+Same protocol as CDD-CESM (`StratifiedGroupKFold`, seed 42; validation patients by `GroupShuffleSplit`,
+seed 42 + fold, 15%). CBIS-DDSM file names carry no pathology label, so patients are stratified by the
+tercile of their median lesion area. The official CBIS-DDSM Training/Test assignment is recorded in the
+manifest but not used. The script asserts that no patient appears in more than one fold or role.
