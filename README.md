@@ -59,11 +59,15 @@ only the top-level Keras layers and undercounts; it is not used for Table 9.
 ## Code version
 
 The tag `v2.0-ijies` marks the code of the revised manuscript. Relative to the scripts that produced
-Tables 6 and 7, the only change in `train_dmsa_kanet_patientlevel.py` is an optional learning-rate
+Tables 6 and 7, `train_dmsa_kanet_patientlevel.py` differs only in (i) an optional learning-rate
 override (`LR1`, `LR2`, `RUN_TAG` environment variables) and two extra fields in the result files
-(configuration and best validation Dice); with the variables unset, the script is identical in
-behaviour. Earlier versions of this README described the first-submission settings
-(LR2 = 5e-5, image-level folds); those settings are not used in the current manuscript.
+(configuration and best validation Dice), and (ii) identifier names: the model builder, the trainer
+class and the Keras package of the custom layers, which still carried the project's earlier working
+title (AMEDDE-Net), were renamed to DMSA-KANet. The old layer names are registered as aliases, so the
+saved checkpoints still load. With the variables unset, the script is identical in behaviour
+(same architecture, 120,497,866 parameters, 56.70 GFLOPs). Earlier versions of this README described
+the first-submission settings (LR2 = 5e-5, image-level folds); those settings are not used in the
+current manuscript.
 
 ## Environment
 
