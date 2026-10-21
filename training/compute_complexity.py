@@ -25,7 +25,7 @@ keep = [n for n in tree.body
 ns = {'__name__': 'complexity'}
 exec(compile(ast.Module(body=keep, type_ignores=[]), SCRIPT, 'exec'), ns)
 
-model, backbone = ns['build_amedde_net_v9']((256, 256, 3), 1)
+model, backbone = ns['build_dmsa_kanet']((256, 256, 3), 1)
 
 def count(m):
     total = m.count_params()

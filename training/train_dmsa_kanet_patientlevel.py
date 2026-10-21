@@ -188,7 +188,7 @@ def print_complexity_table(model, input_shape=(256,256,3), model_name='DMSA-KANe
 # ============================================================
 # CUSTOM LAYERS (unchanged)
 # ============================================================
-@register_keras_serializable(package='AMEDDE')
+@register_keras_serializable(package='DMSAKANet')
 class KANSplineActivation(layers.Layer):
     def __init__(self, f, gs=5, so=3, **kw):
         super().__init__(**kw)
@@ -226,7 +226,7 @@ class KANSplineActivation(layers.Layer):
         c = super().get_config(); c.update({'f': self.f, 'gs': self.gs, 'so': self.so}); return c
 
 
-@register_keras_serializable(package='AMEDDE')
+@register_keras_serializable(package='DMSAKANet')
 class KANLayer(layers.Layer):
     def __init__(self, u, gs=5, so=3, dr=0.1, **kw):
         super().__init__(**kw)
@@ -248,7 +248,7 @@ class KANLayer(layers.Layer):
         c = super().get_config(); c.update({'u': self.u, 'gs': self.gs, 'so': self.so, 'dr': self.dr}); return c
 
 
-@register_keras_serializable(package='AMEDDE')
+@register_keras_serializable(package='DMSAKANet')
 class ChannelAttentionKAN(layers.Layer):
     def __init__(self, f, gs=5, so=3, dv=0.05, **kw):
         super().__init__(**kw)
@@ -268,7 +268,7 @@ class ChannelAttentionKAN(layers.Layer):
         c = super().get_config(); c.update({'f': self.f, 'gs': self.gs, 'so': self.so, 'dv': self.dv}); return c
 
 
-@register_keras_serializable(package='AMEDDE')
+@register_keras_serializable(package='DMSAKANet')
 class CBAMBlock(layers.Layer):
     def __init__(self, f, r=8, **kw):
         super().__init__(**kw)
@@ -295,7 +295,7 @@ class CBAMBlock(layers.Layer):
         c = super().get_config(); c.update({'f': self.f, 'r': self.r}); return c
 
 
-@register_keras_serializable(package='AMEDDE')
+@register_keras_serializable(package='DMSAKANet')
 class KANGateAttention(layers.Layer):
     def __init__(self, f, **kw):
         super().__init__(**kw)
@@ -329,7 +329,7 @@ class KANGateAttention(layers.Layer):
         c = super().get_config(); c.update({'f': self.f}); return c
 
 
-@register_keras_serializable(package='AMEDDE')
+@register_keras_serializable(package='DMSAKANet')
 class ViTBottleneck(layers.Layer):
     def __init__(self, dim=1024, num_heads=8, num_blocks=4,
                  mlp_ratio=4.0, dropout=0.1, **kw):
@@ -399,7 +399,7 @@ class ViTBottleneck(layers.Layer):
         return c
 
 
-@register_keras_serializable(package='AMEDDE')
+@register_keras_serializable(package='DMSAKANet')
 class ResizeToMatch(layers.Layer):
     def __init__(self, **kw): super().__init__(**kw)
     def call(self, inputs, training=None):
@@ -411,7 +411,7 @@ class ResizeToMatch(layers.Layer):
     def get_config(self): return super().get_config()
 
 
-@register_keras_serializable(package='AMEDDE')
+@register_keras_serializable(package='DMSAKANet')
 class SpatialAttentionMap(layers.Layer):
     def __init__(self, **kw): super().__init__(**kw)
 
@@ -499,7 +499,17 @@ def hr_path(inputs, f=16, nm='hr'):
 # ============================================================
 # DMSA-KANet ARCHITECTURE (unchanged)
 # ============================================================
-def build_amedde_net_v9(input_shape=(256, 256, 3), n_labels=1):
+# Checkpoints (.keras) saved before the custom layers were renamed store them under the
+# earlier working title of the project ("AMEDDE"). These names are registered as aliases so that
+# the saved best-validation checkpoints (used by reevaluate_thresholds.py) still load.
+_LEGACY_PACKAGE = 'AMEDDE'
+tf.keras.utils.get_custom_objects().update({
+    f'{_LEGACY_PACKAGE}>{c.__name__}': c
+    for c in (KANSplineActivation, KANLayer, ChannelAttentionKAN, CBAMBlock,
+              KANGateAttention, ViTBottleneck, ResizeToMatch, SpatialAttentionMap)})
+
+
+def build_dmsa_kanet(input_shape=(256, 256, 3), n_labels=1):
     inputs = layers.Input(shape=input_shape, name='input')
     hr = hr_path(inputs, f=16, nm='hr')
 
@@ -543,7 +553,7 @@ def build_amedde_net_v9(input_shape=(256, 256, 3), n_labels=1):
               layers.Conv2D(n_labels, 1, activation='sigmoid', name='od3')(d3))
 
     model = models.Model(inputs=inputs, outputs=[out_main, od1, od2, od3],
-                         name='AMEDDE_Net_v11')
+                         name='DMSA_KANet')
     return model, backbone
 
 
@@ -618,7 +628,7 @@ def pixel_accuracy(y_true, y_pred, thr=PRED_THRESHOLD):
 # ============================================================
 # CUSTOM TRAINER
 # ============================================================
-class AMEDDETrainer(tf.keras.Model):
+class DMSAKANetTrainer(tf.keras.Model):
     def __init__(self, base_model, ds_weights=None):
         super().__init__()
         self.base_model = base_model
@@ -649,8 +659,8 @@ class AMEDDETrainer(tf.keras.Model):
 
 
 def build_and_compile(lr=LR_PHASE1):
-    base, backbone = build_amedde_net_v9()
-    trainer = AMEDDETrainer(base)
+    base, backbone = build_dmsa_kanet()
+    trainer = DMSAKANetTrainer(base)
     trainer.compile(optimizer=Adam(learning_rate=lr, clipnorm=1.0), run_eagerly=False)
     return trainer, base, backbone
 
@@ -1133,7 +1143,7 @@ pd.DataFrame([{'Metric': lbl, 'Mean': f"{results_df[c].mean():.4f}",
 cv_table_rows = []
 for _, row in results_df.iterrows():
     cv_table_rows.append({
-        'Method': f"AMEDDE-Net Fold {int(row['fold'])}",
+        'Method': f"DMSA-KANet Fold {int(row['fold'])}",
         'Loss':   row['val_loss'],
         'ACC':    row['accuracy'],
         'DICE':   row['dice'],
