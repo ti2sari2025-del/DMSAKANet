@@ -17,7 +17,7 @@ version used in the original submission. Changes in this version (revision 2):
   7. Fixed random seeds; per-image metrics and test-set probability maps are saved
      so that every reported number can be recomputed.
   8. (revision 4) Optional learning-rate override for nested selection inside the
-     training patients:  LR1=1e-4 LR2=5e-5 RUN_TAG=lr1_1e-4_lr2_5e-5 DATASET=cbisddsm ...
+     training patients:  LR1=1e-4 LR2=5e-6 RUN_TAG=nested/lr1_1e-4_lr2_5e-6 DATASET=cbisddsm ...
      Without these variables the script reproduces the runs of Tables 6 and 7.
      Each fold result also stores the configuration, the best validation Dice and its epoch.
 
@@ -55,7 +55,7 @@ DATASETS  = {
 }
 DATA_DIR  = DATASETS[DATASET][0]                                    # images/ and masks/ inside
 FOLD_CSV  = os.path.join(DATA_DIR, DATASETS[DATASET][1])
-RUN_TAG   = os.environ.get('RUN_TAG', '')                           # e.g. nested/lr1_1e-4_lr2_5e-5
+RUN_TAG   = os.environ.get('RUN_TAG', '')                           # e.g. nested/lr1_1e-4_lr2_5e-6
 OUT_DIR   = os.path.abspath(os.path.join(f'results_patientlevel_{DATASET}', RUN_TAG))  # metrics, predictions
 os.makedirs(OUT_DIR, exist_ok=True)
 

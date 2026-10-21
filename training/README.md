@@ -110,6 +110,7 @@ Results are written to `results_patientlevel_<dataset>/` (DMSA-KANet) and
 | ViT | 47.83 ± 2.76 | 16.36 ± 9.25 |
 | U-Net++ | 46.60 ± 5.69 | 2.66 ± 0.25 |
 | DMSA-KANet | 43.97 ± 9.11 | 39.98 ± 8.40 |
+| DMSA-KANet, learning rates re-selected per fold (nested) | — | 44.93 ± 1.96 |
 
 Full metrics are in `results/all_summary.csv` and per fold in `results/all_fold_results.csv`.
 Under this protocol DMSA-KANet does not outperform the baselines. On CBIS-DDSM, U-Net++ collapsed
@@ -127,6 +128,12 @@ best trials of the earlier search (Trials 8, 6, and 5, all with batch size 8) an
 any of these runs.
 For each outer fold, `select_nested.py` takes the configuration with the highest best-validation
 Dice and reports its test result; the test fold plays no part in the choice.
+
+Result: LR1 = 1e-4 was chosen in four folds (LR2 = 5e-6 in folds 1 and 4, 1e-5 in folds 3 and 5),
+LR1 = 1e-3 / LR2 = 5e-6 in fold 2; every chosen checkpoint came from Phase 1 (epochs 5–16).
+Nested Dice 44.93 ± 1.96% (per fold 42.06, 45.68, 46.05, 43.88, 46.98%), compared with
+39.98 ± 8.40% for the fixed Trial 8 configuration. All 20 runs (5 folds × 4 configurations) and the
+choice are listed in `results/nested_selection_cbisddsm.csv`.
 
 ```
 nohup bash run_nested_cbis.sh > nested_log.txt 2>&1 &   # resumable
